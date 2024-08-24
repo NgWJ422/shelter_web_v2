@@ -20,7 +20,13 @@ This is a charity website build by me and other interns at Kidocode for the Kido
 3. main mission, vision, plan
 4. about us
     - who we are
-5. activity
+5. activity(maybe? things to learn?,if so)
+    - coding
+    - robotics
+    - AI
+    - Art
+        - 3D printing
+    - Social Media/photography
 6. gallery
 7. Testinmonials and stories
     - instagram video and its description
