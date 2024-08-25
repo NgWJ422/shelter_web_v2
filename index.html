@@ -203,7 +203,33 @@
                 transform: translateY(-50%) scale(0.95); /* Slightly shrink on click for a press effect */
             }
 
-            
+            /* Reduce padding for nav links to make the navbar more compact */
+            .navbar-nav .nav-link {
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+            }
+
+            /* Reduce margin between nav items */
+            .navbar-nav .nav-item {
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+            }
+
+            /* Optional: Decrease font size to fit more items */
+            .navbar-nav .nav-link {
+                font-size: 0.875rem; /* Smaller font size (14px) */
+            }
+
+            /* Adjust the dropdown toggle for a consistent appearance */
+            .navbar-nav .dropdown-toggle::after {
+                margin-left: 0.25rem;
+            }
+
+            /* Adjust navbar-brand spacing to make more room */
+            .navbar-brand {
+                margin-right: 1rem;
+            }
+
 
 
             
@@ -216,34 +242,38 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand fw-bolder" href="#page-top"><img src="assets/img/kidocode_icon.png" class="me-2" height="30px">KidoCode</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#testinomials">Testinomials</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        <!-- Language Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Language
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="index-cn.html">中文</a></li>
-                            <li><a class="dropdown-item" href="index-bm.html">Bahasa Melayu</a></li>
-                            <!-- Add more languages here -->
-                            </ul>
-                        </li>
+              <a class="navbar-brand fw-bolder" href="#page-top">
+                <img src="assets/img/kidocode_icon.png" class="me-2" height="30px">KidoCode
+              </a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testinomials">Testinomials</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portfolio">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                  <!-- Language Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                      Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="index-cn.html">中文</a></li>
+                      <li><a class="dropdown-item" href="index-bm.html">Bahasa Melayu</a></li>
+                      <!-- Add more languages here -->
                     </ul>
-                </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         
         <!-- Masthead-->
         <header class="masthead">
@@ -615,6 +645,13 @@
                 });
             });
         </script>
-        
+        <script>
+            // Prevent the dropdown from closing when clicking inside it
+            document.querySelectorAll('.dropdown-menu').forEach(function(dropdown) {
+              dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+              });
+            });
+          </script>
     </body>
 </html>
