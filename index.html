@@ -20,6 +20,68 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
         <style>
+            /* Gradient 1: Sunset Vibes */
+            .bg-gradient-1 {
+                background: linear-gradient(to right, #f9d423, #ff4e50); /* Bright Yellow to Red */
+            }
+
+            /* Gradient 2: Ocean Breeze */
+            .bg-gradient-2 {
+                background: linear-gradient(to right, #00c6ff, #0072ff); /* Sky Blue to Ocean Blue */
+            }
+
+            /* Gradient 3: Minty Fresh */
+            .bg-gradient-3 {
+                background: linear-gradient(to right, #a8e063, #d6f5d6); /* Mint Green to Light Green */
+            }
+
+            /* Gradient 4: Peachy Pink */
+            .bg-gradient-4 {
+                background: linear-gradient(to right, #fbc2eb, #a6c0fe); /* Peach Pink to Light Blue */
+            }
+
+            /* Gradient 5: Lavender Fields */
+            .bg-gradient-5 {
+                background: linear-gradient(to right, #e6a9f0, #a2c2e2); /* Lavender to Light Blue */
+            }
+
+            /* Gradient 6: Tropical Sunset */
+            .bg-gradient-6 {
+                background: linear-gradient(to right, #ff6f61, #d4a5a5); /* Coral to Light Coral */
+            }
+
+            /* Gradient 7: Juicy Mango */
+            .bg-gradient-7 {
+                background: linear-gradient(to right, #f9d423, #ff4e50); /* Mango Yellow to Juicy Red */
+            }
+
+            /* Gradient 8: Sky and Sea */
+            .bg-gradient-8 {
+                background: linear-gradient(to right, #4facfe, #00f2fe); /* Sky Blue to Aqua Blue */
+            }
+
+            /* Gradient 9: Soft Berry */
+            .bg-gradient-9 {
+                background: linear-gradient(to right, #f79a7b, #f2c7d5); /* Soft Berry to Light Pink */
+            }
+
+            /* Gradient 10: Fun Lemonade */
+            .bg-gradient-10 {
+                background:linear-gradient(#ffdad5,#fff7f9);
+            }
+
+
+            #about img {
+                max-width: 80%; /* Ensures the image doesn't exceed 80% of the container width */
+                height: auto; /* Maintains aspect ratio */
+            }
+
+            @media (max-width: 768px) {
+                #about img {
+                    max-width: 100%; /* Allows logo to be responsive on smaller screens */
+                }
+            }
+
             .slider {
                 max-width: 100%;
                 box-sizing: border-box;
@@ -420,7 +482,6 @@
             </div>
         </nav>
 
-        
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
@@ -438,25 +499,141 @@
         </header>
 
         <!--Main mission, vision, plan-->
-        <div id="mission">
-            <div class="container">
-                
-            </div>
+        <div id="mission" class="bg-gradient-1 py-3">
+            <div class="container my-5">
+                <!-- Mission Section -->
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h2 class="display-4 text-white fw-bold">Our Mission</h2>
+                    <p class="lead text-white fw-normal">
+                      Lorem ipsum dolor sit amet consectetur.</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae debitis, voluptate sit minima impedit incidunt rem suscipit, repellat quidem, ducimus tenetur ab perspiciatis cum nihil. Id ab enim hic ducimus?
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Vision Section -->
+                <div class="row mt-5">
+                  <div class="col-12 text-center">
+                    <h2 class="display-4 text-white fw-bold">Our Vision</h2>
+                    <p class="lead text-white fw-normal">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam aliquam natus dolorum enim commodi. Ex sint hic ratione ad sapiente magnam exercitationem suscipit doloremque blanditiis sed, cum eos placeat.
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Plan Section -->
+                <div class="row mt-5">
+                  <div class="col-12 text-center">
+                    <h2 class="display-4 text-white fw-bold">Our Approach</h2>
+                  </div>
+                  
+                  <!-- Creativity Card -->
+                  <div class="col-md-4 mt-4">
+                    <div class="card border-primary h-100">
+                      <div class="card-body">
+                        <h5 class="card-title text-primary">Lorem.</h5>
+                        <p class="card-text text-dark">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nulla enim vitae ullam dolore nesciunt magnam, quam molestiae aut voluptate necessitatibus autem vel! Illum reprehenderit soluta dolorem magnam, accusamus quisquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Metacognition Card -->
+                  <div class="col-md-4 mt-4">
+                    <div class="card border-danger h-100">
+                      <div class="card-body">
+                        <h5 class="card-title text-danger">lorem</h5>
+                        <p class="card-text text-dark">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo earum odio quaerat ipsum distinctio eum ab sint consequatur eligendi. Laboriosam aliquid vel dignissimos recusandae autem pariatur explicabo distinctio ex alias.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Student-Centricity Card -->
+                  <div class="col-md-4 mt-4">
+                    <div class="card border-success h-100">
+                      <div class="card-body">
+                        <h5 class="card-title text-success">lorem</h5>
+                        <p class="card-text text-dark">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit, quis porro reprehenderit vel animi officia ut saepe ratione culpa sit? Cupiditate exercitationem odit est deserunt placeat in voluptatum accusantium?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Collaboration Card -->
+                  <div class="col-md-4 mt-4">
+                    <div class="card border-warning h-100">
+                      <div class="card-body">
+                        <h5 class="card-title text-warning">lorem</h5>
+                        <p class="card-text text-dark">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam, aspernatur cum sapiente harum in molestias sed tempore provident unde veritatis, accusamus deserunt! Perferendis soluta accusantium placeat harum, voluptas quisquam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Experiential Card -->
+                  <div class="col-md-4 mt-4">
+                    <div class="card border-info h-100">
+                      <div class="card-body">
+                        <h5 class="card-title text-info">lorem</h5>
+                        <p class="card-text text-dark">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptates fugit soluta adipisci consequatur libero, similique dolorem exercitationem dignissimos quam velit expedita odio officiis quis reiciendis ex porro debitis fugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Adaptable Card -->
+                  <div class="col-md-4 mt-4">
+                    <div class="card border-secondary h-100">
+                      <div class="card-body">
+                        <h5 class="card-title text-secondary">lorem</h5>
+                        <p class="card-text text-dark">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quos nostrum voluptas veniam, accusamus, explicabo dolorem optio eius saepe rem earum, ratione corporis praesentium? Minus laborum nihil reiciendis laboriosam quos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
         </div>
 
-        <div id="about">
+        <section id="about" class="bg-gradient-2 text-light py-5">
             <div class="container">
-
+                <div class="row align-items-center">
+                    <!-- Logo Section -->
+                    <div class="col-md-12 mb-4 text-center">
+                        <img src="/assets/img/kidocode-title-logo.png" alt="Kidocode Logo" class="img-fluid" style="max-width: 80%;">
+                    </div>
+        
+                    <!-- Text Section -->
+                    <div class="col-md-12">
+                        <h2>Who We Are</h2>
+                        <p class="lead">
+                            Kidocode is a dynamic technology and entrepreneurship school dedicated to children aged 5–18. We provide a unique blend of online and on-campus education to foster innovative skills and entrepreneurial spirit in young learners.
+                        </p>
+                    </div>
+                    <div class="col-md-12 text-end mt-4">
+                        <a href="https://www.kidocode.com/" target="_blank" class="btn btn-light shadow-sm">Learn More About Us</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        
+        
 
         <!--Testinomials and stories-->
-        <div id="testinomials">
+        <div id="testinomials" class="bg-gradient-3">
             
         </div>
 
         <!-- Gallery-->
-        <div id="portfolio">
+        <div id="portfolio" class="bg-gradient-4">
             <div class="container-fluid p-0">
                 <div class="row g-0 justify-content-center">
                     <div class="col-lg-4 col-sm-6">
@@ -521,7 +698,7 @@
         </div>
 
         <!-- Services-->
-        <section class="page-section bg-pr" id="services">
+        <section class="page-section bg-gradient-5" id="services">
             <div class="container px-3 px-lg-4">
                 <h2 class="text-center mt-0">At Your Service</h2>
                 <hr class="divider" />
@@ -560,7 +737,7 @@
         
         
         <!--card carousel-->
-        <div id="slider" class="bg-primary p-2">
+        <div id="slider" class="bg-gradient-7 p-2">
             <div class="container my-5">
                 <div class="owl-carousel owl-theme">
                     <!-- Card 1 -->
@@ -658,7 +835,7 @@
         </div>
 
         <!--Partners-->
-        <section id="partners" class="py-5 bg-primary">
+        <section id="partners" class="py-5 bg-gradient-8">
             <div class="container">
                 <div class="text-center">
                     <h2>Partners</h2>
@@ -693,13 +870,13 @@
 
 
         <!--FAQs-->
-        <div id="faq">
+        <div id="faq" class="bg-gradient-9">
             <div class="container">
 
             </div>
         </div>
 
-        <section class="page-section" id="contact">
+        <section class="page-section bg-gradient-10" id="contact">
             <div class="contact-container">
               <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
                 <div class="contact-left-title">
