@@ -1,3 +1,34 @@
+const questionWrappers = document.querySelectorAll('.q-wrapper');
+
+questionWrappers.forEach((wrapper) => {
+  wrapper.addEventListener('click', showAnswer);
+  wrapper.addEventListener('keydown', (e) => {
+    if (e.key == 'Enter') {
+      showAnswer(e);
+    }
+  });
+});
+
+function showAnswer(e) {
+  questionWrappers.forEach((wrapper) => {
+    const h3 = wrapper.querySelector('h3');
+    const svg = wrapper.querySelector('svg');
+    const answer = wrapper.nextElementSibling;
+
+    if (wrapper == e.currentTarget) {
+      h3.classList.toggle('h3-active');
+      svg.classList.toggle('svg-animation');
+      answer.classList.toggle('p-visible');
+    } else {
+      h3.classList.remove('h3-active');
+      svg.classList.remove('svg-animation');
+      answer.classList.remove('p-visible');
+    }
+  });
+}
+
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>KidoCode shelter webpaage</title>
+        <title>KidoCode shelter webpage - EN</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/kidocode_icon.png" />
             
@@ -27,6 +27,172 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
         <style>
+            /* Specific styles for the custom card */
+            .testinomials-video{
+                border-radius: 30px;
+                max-height: 600px;
+                max-width: 600px;
+            }
+
+            .custom-card .custom-card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            }
+
+            .custom-card .custom-card-body .card-title {
+            margin-bottom: 15px;
+            }
+
+            .custom-card .custom-card-body .card-text {
+            margin-bottom: 0;
+            }
+
+            @media (max-width: 992px) {
+            .custom-card .custom-card-body {
+                text-align: center;
+            }
+            }
+
+
+            #faq {
+            background-image:
+                linear-gradient(var(--soft-violet), var(--soft-blue));
+            }
+
+            article {
+            display: grid;
+            margin-top: min(1.5rem, 5vw);
+            width: 90vw;
+            max-width: 56.25rem;
+            margin: auto;
+
+            @media (min-width: 57.06rem) {
+                grid-template-columns: 22.5rem 1fr;
+            }
+            }
+
+            .img-container {
+            grid-row: 1 / span 2;
+            grid-column: 1;
+            z-index: 1;
+            height: min(15rem, 60vw);
+            width: 100%;
+            background-image:
+                var(--mobile-illustration1),
+                var(--mobile-illustration2);
+            background-repeat: no-repeat;
+            background-size: auto 85%, auto 50%;
+            background-position: 50% 0%, 50% 100%;
+
+            @media (min-width: 57.06rem) {
+                grid-row: 1;
+                grid-column: 1;
+                height: 100%;
+                background-color: hsl(0, 0%, 100%);
+                border-radius: 1.25rem 0 0 1.25rem;
+                background-image:
+                var(--desktop-illustration1),
+                var(--desktop-illustration2);
+                background-size: 120%, auto;
+                background-position: 100% 50%, 100% 60%;
+
+                &::before {
+                content: "";
+                display: block;
+                height: 100%;
+                width: 50%;
+                background-image:
+                    var(--desktop-illustration3);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: left 65%;
+                position: relative;
+                left: -24.5%;
+                }
+            }
+            }
+
+            .faq {
+            grid-row: 2 / span 2;
+            grid-column: 1;
+            padding: min(7.5rem, 30vw) 1.5rem 2.5rem;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 1.25rem;
+            box-shadow: 0 0.62rem 1.87rem hsla(0, 0%, 0%, .2);
+
+            @media (min-width: 57.06rem) {
+                grid-row: 1;
+                grid-column: 2;
+                padding: 3.5rem 4rem 3.5rem;
+                border-radius: 0 1.25rem 1.25rem 0;
+            }
+
+            h2 {
+                color: var(--very-dark-blue);
+                font-weight: 700;
+                font-size: 1.8rem;
+                text-align: center;
+                margin: 1.2em 0;
+
+                @media (min-width: 57.06rem) {
+                text-align: left;
+                margin: 0 0 1.65em 0;
+                }
+            }
+
+            .q-a {
+                font-size: 0.95rem;
+                border-bottom:
+                1.5px solid var(--light-grayish-blue);
+                padding-bottom: 1.05em;
+                margin-top: 1.05em;
+            }
+
+            .q-wrapper {
+                display: grid;
+                grid-template-columns: 1fr auto;
+            }
+
+            h3 {
+                font-size: 0.95rem;
+                grid-column: 1;
+                color: var(--very-dark-grayish-blue);
+                cursor: pointer;
+
+                &:hover {
+                color: var(--soft-red);
+                }
+
+                &.h3-active {
+                color: var(--very-dark-blue);
+                font-weight: 700;
+                }
+            }
+
+            svg {
+                grid-column: 2;
+                justify-self: end;
+                cursor: pointer;
+                transition: transform 0.2s;
+
+                &.svg-animation {
+                transform: rotate(180deg);
+                }
+            }
+
+            p {
+                display: none;
+                width: calc(100% - calc(10px + 0.7rem));
+                color: var(--dark-grayish-blue);
+                margin-top: 1.05em;
+
+                &.p-visible {
+                display: block;
+                }
+            }
+            }
+
             .gallery {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -495,7 +661,7 @@
                     <li class="nav-item"><a class="nav-link" href="#testinomials">Testinomials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#slider">Activities</a></li>
                     <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -522,7 +688,7 @@
                         <hr class="text-secondary"/>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+                        <p class="text-white-75 mb-5">We believe every child deserves a chance to thrive. By providing free transportation, we open doors to education and enrichment for kids in need. Join us in driving toward a brighter, more inclusive future.</p>
                         
                     </div>
                 </div>
@@ -659,12 +825,39 @@
         
     
         <!--Testinomials and stories-->
-        <div id="testinomials" class="bg-gradient-3">
-            
+        <div id="testinomials" class="bg-gradient-3 py-3">
+            <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                <div class="custom-card card bg-white py-3">
+                    <div class="row g-0 text-center">
+                    <div class="col-lg-6">
+                        <a href="assets/video/Kidohelp_instagram_video.mp4" data-fancybox="video-gallery" data-caption="Video Title">
+                        <img src="assets/img/kidohelp_insta_1.png" class="img-fluid testinomials-video" alt="Video Thumbnail">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                        <div class="custom-card-body card-body my-auto bg-white">
+                        <h5 class="card-title ">Video Title</h5>
+                        <p class="card-text">
+                            Description of the video goes here. This description can be as long as necessary to explain the video content.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
         </div>
         
         <!-- Gallery Section -->
-        <section id="gallery" class="gallery bg-gradient-4">
+        <section id="gallery" class=" bg-gradient-4 py-5">
+            <div class="text-center display-4 fw-bold">
+                Gallery
+            </div>
+            <div class="gallery">
             <div class="gallery-item">
                 <a href="assets/img/kidohelp_insta_1.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity kidocode">
                     <img src="assets/img/kidohelp_insta_1.png" alt="Activity 1">
@@ -705,6 +898,7 @@
                     <img src="assets/img/kidocode_title_logo.png" alt="Activity 8">
                 </a>
             </div>
+        </div>
         </section>
 
 
@@ -881,11 +1075,66 @@
 
 
         <!--FAQs-->
-        <div id="faq" class="bg-gradient-9">
-            <div class="container">
-
-            </div>
-        </div>
+        <section class="page-section" id="faq">
+            <article>
+              <div class="img-container"></div>
+              <div class="faq">
+                <h2>FAQ</h2>
+                <div class="q-a">
+                  <div class="q-wrapper">
+                    <h3 tabindex="0">How many team members can I invite?</h3>
+                    <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p>You can invite up to 2 additional users on the Free plan. There is no limit on
+                    team members for the Premium plan.</p>
+                </div>
+        
+                <div class="q-a">
+                  <div class="q-wrapper">
+                    <h3 tabindex="0">What is the maximum file upload size?</h3>
+                    <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </div>
+        
+                <div class="q-a">
+                  <div class="q-wrapper">
+                    <h3 tabindex="0">How do I reset my password?</h3>
+                    <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p>
+                </div>
+        
+                <div class="q-a">
+                  <div class="q-wrapper">
+                    <h3 tabindex="0">Can I cancel my subscription?</h3>
+                    <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+        
+                <div class="q-a">
+                  <div class="q-wrapper">
+                    <h3 tabindex="0">Do you provide additional support?</h3>
+                    <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        
 
         <section class="page-section bg-gradient-10" id="contact">
             <div class="contact-container">
@@ -908,37 +1157,42 @@
 
         <!-- Footer-->
             <!-- Footer-->
-    <footer class="footer">
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-        </ul>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#activities">Activities</a></li>
-          <li class="menu__item"><a class="menu__link" href="#gallery">Gallery</a></li>
-          <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#partners">Partners</a></li>
-          <li class="menu__item"><a class="menu__link" href="#contact">Contact Us</a></li>
-    
-        </ul>
-        <p>&copy;KidoHelp | Something Something</p>
-      </footer>
+        <footer class="footer">
+            <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/KidoCode" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://x.com/kidocode" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/company/kidocode/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/kidocode/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">To the top</a></li>
+            <li class="menu__item"><a class="menu__link" href="#mission">Mission</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#testinomials">Testinomials</a></li>
+            <li class="menu__item"><a class="menu__link" href="#gallery">Gallery</a></li>
+            <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#slider">Activities</a></li>
+            <li class="menu__item"><a class="menu__link" href="#partners">Partners</a></li>
+            <li class="menu__item"><a class="menu__link" href="#faq">FAQs</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contact">Contact Us</a></li>
+        
+            </ul>
+            <p>&copy;KidoHelp | Something Something</p>
+        </footer>
         
         <!-- jQuery (must be loaded first) -->
 
