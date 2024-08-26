@@ -8,18 +8,49 @@
         <title>KidoCode shelter webpaage</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/kidocode_icon.png" />
+            
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Owl Carousel CSS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+        
         <style>
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 10px;
+                justify-content: center; /* Centers the grid horizontally */
+                align-items: center; /* Centers the grid items vertically */
+            }
+
+            .gallery-item {
+                display: flex; /* Makes the gallery-item a flex container */
+                justify-content: center; /* Centers the image horizontally within the item */
+                align-items: center; /* Centers the image vertically within the item */
+                overflow: hidden;
+            }
+
+            .gallery-item img {
+                max-width: 100%; /* Ensures the image scales properly */
+                max-height: 100%; /* Ensures the image scales properly */
+                height: auto;
+                width: auto;
+                display: block;
+            }
+
+
             /* Gradient 1: Sunset Vibes */
             .bg-gradient-1 {
                 background: linear-gradient(to right, #f9d423, #ff4e50); /* Bright Yellow to Red */
@@ -462,7 +493,7 @@
                     <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testinomials">Testinomials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#slider">Slider</a></li>
                     <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
@@ -632,70 +663,49 @@
             
         </div>
 
-        <!-- Gallery-->
-        <div id="portfolio" class="bg-gradient-4">
-            <div class="container-fluid p-0">
-                <div class="row g-0 justify-content-center">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            
-                        
-                    </div>
-                </div>
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery bg-gradient-4">
+            <div class="gallery-item">
+                <a href="assets/img/kidohelp_insta_1.png" data-lightbox="charity-gallery" data-title="Activity 1">
+                    <img src="assets/img/kidohelp_insta_1.png" alt="Activity 1">
+                </a>
             </div>
-        </div>
+            <div class="gallery-item">
+                <a href="assets/img/Arash.png" data-lightbox="charity-gallery" data-title="Activity 2">
+                    <img src="assets/img/Arash.png" alt="Activity 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/img/kidohelp_insta_2.png" data-lightbox="charity-gallery" data-title="Activity 3">
+                    <img src="assets/img/kidohelp_insta_2.png" alt="Activity 3">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/img/kidohelp_insta_3.png" data-lightbox="charity-gallery" data-title="Activity 4">
+                    <img src="assets/img/kidohelp_insta_3.png" alt="Activity 4">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/img/kidohelp_insta_4.png" data-lightbox="charity-gallery" data-title="Activity 5">
+                    <img src="assets/img/kidohelp_insta_4.png" alt="Activity 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/img/kidocode_family.jpeg" data-lightbox="charity-gallery" data-title="Activity 6">
+                    <img src="assets/img/kidocode_family.jpeg" alt="Activity 6">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/img/kidocode_logo_outline.jpg" data-lightbox="charity-gallery" data-title="Activity 7">
+                    <img src="assets/img/kidocode_logo_outline.jpg" alt="Activity 7">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/img/kidocode_title_logo.png" data-lightbox="charity-gallery" data-title="Activity 8">
+                    <img src="assets/img/kidocode_title_logo.png" alt="Activity 8">
+                </a>
+            </div>
+        </section>
 
         <!-- Services-->
         <section class="page-section bg-gradient-5" id="services">
@@ -928,25 +938,28 @@
         </ul>
         <p>&copy;KidoHelp | Something Something</p>
       </footer>
-        <!-- Bootstrap core JS-->
+        
+        <!-- jQuery (must be loaded first) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            
+        <!-- Bootstrap core JS (includes Popper.js) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!-- Owl Carousel JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <!-- Bootstrap Icons CDN for arrows -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <!-- SimpleLightbox plugin JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        
+        <!-- Core theme JS -->
+        <script src="js/scripts.js"></script>
+        
+        <!-- Ionicons (for additional icons) -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        
+        <!-- Additional Scripts (e.g., for forms or Swiper if necessary) -->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             $(document).ready(function(){
