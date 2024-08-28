@@ -26,6 +26,9 @@
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/css/project-1.css">
+
         <style>
             /* Specific styles for the custom card */
             .testinomials-video{
@@ -193,28 +196,7 @@
             }
             }
 
-            .gallery {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 10px;
-                justify-content: center; /* Centers the grid horizontally */
-                align-items: center; /* Centers the grid items vertically */
-            }
-
-            .gallery-item {
-                display: flex; /* Makes the gallery-item a flex container */
-                justify-content: center; /* Centers the image horizontally within the item */
-                align-items: center; /* Centers the image vertically within the item */
-                overflow: hidden;
-            }
-
-            .gallery-item img {
-                max-width: 100%; /* Ensures the image scales properly */
-                max-height: 100%; /* Ensures the image scales properly */
-                height: auto;
-                width: auto;
-                display: block;
-            }
+            
 
 
             /* Gradient 1: Sunset Vibes */
@@ -859,53 +841,138 @@
         </div>
         
         <!-- Gallery Section -->
-        <section id="gallery" class=" bg-gradient-4 py-5">
-            <div class="text-center display-4 fw-bold">
-                Gallery
+        <section class="bg-light py-5" id="gallery">
+            
+            <div class="text-center display-4 fw-bold pb-5">
+              Gallery
             </div>
-            <div class="gallery">
-            <div class="gallery-item">
-                <a href="assets/img/kidohelp_insta_1.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity kidocode">
-                    <img src="assets/img/kidohelp_insta_1.png" alt="Activity 1">
-                </a>
+            <div class="container overflow-hidden">
+              <div class="row gy-3 gy-md-2 bsb-project-1-grid">
+  
+                <div class="col-12 col-md-6 col-lg-6 bsb-project-1-item">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                      <a href="assets/img/gallery_picture1.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 1">
+                        <img class="img-fluid bsb-scale bsb-hover-scale-up" src="assets/img/gallery_picture1.png" alt="Gallery 1">
+                      </a>
+                      <figcaption>
+                        <h3 class="text-white bsb-hover-fadeInUp">Innovate</h3>
+                        <div class="text-white bsb-hover-fadeInDown">Gallery 1</div>
+                      </figcaption>
+                    </figure>
+                  </div>
+                
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
+                  <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                    <a href="assets/img/gallery_picture2.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 2">
+                      <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture2.png" alt="Gallery 2">
+                    </a>
+                    <figcaption>
+                      <h3 class="text-white bsb-hover-fadeInLeft">Create</h3>
+                      <div class="text-white bsb-hover-fadeInRight">Gallery 2</div>
+                    </figcaption>
+                  </figure>
+                </div>
+          
+          
+                <div class="col-12 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                      <a href="assets/img/kidohelp_insta_4.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 3">
+                        <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/kidohelp_insta_4.png" alt="Gallery 3">
+                      </a>
+                      <figcaption>
+                        <h3 class="text-white bsb-hover-fadeInLeft">Empower</h3>
+                        <div class="text-white bsb-hover-fadeInRight">Gallery 3</div>
+                      </figcaption>
+                    </figure>
+                  </div>
+          
+                  <div class="col-12 col-lg-3 bsb-project-1-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                      <a href="assets/img/kidohelp_insta_2.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 4">
+                        <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/kidohelp_insta_2.png" alt="Gallery 4">
+                      </a>
+                      <figcaption>
+                        <h3 class="text-white bsb-hover-fadeInLeft">Leaders</h3>
+                        <div class="text-white bsb-hover-fadeInRight">Gallery 4</div>
+                      </figcaption>
+                    </figure>
+                  </div>
+          
+                <div class="col-12 col-md-6 col-lg-2 bsb-project-1-item mt-3">
+                  <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                    <a href="assets/img/gallery_picture6.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 5">
+                      <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture6.png" alt="Gallery 5">
+                    </a>
+                    <figcaption>
+                      <h3 class="text-white bsb-hover-fadeInLeft">Explore</h3>
+                      <div class="text-white bsb-hover-fadeInRight">Gallery 5</div>
+                    </figcaption>
+                  </figure>
+                </div>
+          
+                <div class="col-12 col-md-6 col-lg-2 bsb-project-1-item mt-3">
+                  <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                    <a href="assets/img/gallery_picture4.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 6">
+                      <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture4.png" alt="Gallery 6">
+                    </a>
+                    <figcaption>
+                      <h3 class="text-white bsb-hover-fadeInLeft">Learn</h3>
+                      <div class="text-white bsb-hover-fadeInRight">Gallery 6</div>
+                    </figcaption>
+                  </figure>
+                </div>
+          
+                <div class="col-12 col-md-6 col-lg-2 bsb-project-1-item mt-3">
+                  <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                    <a href="assets/img/gallery_picture5.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 7">
+                      <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture5.png" alt="Gallery 7">
+                    </a>
+                    <figcaption>
+                      <h3 class="text-white bsb-hover-fadeInLeft">Build</h3>
+                      <div class="text-white bsb-hover-fadeInRight">Gallery 7</div>
+                    </figcaption>
+                  </figure>
+                </div>
+          
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item mt-3">
+                  <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                    <a href="assets/img/gallery_picture9.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 8">
+                      <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture9.png" alt="Gallery 8">
+                    </a>
+                    <figcaption>
+                      <h3 class="text-white bsb-hover-fadeInLeft">Inspire</h3>
+                      <div class="text-white bsb-hover-fadeInRight">Gallery 8</div>
+                    </figcaption>
+                  </figure>
+                </div>
+          
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item mt-3">
+                  <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                    <a href="assets/img/gallery_picture8.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 9">
+                      <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture8.png" alt="Gallery 9">
+                    </a>
+                    <figcaption>
+                      <h3 class="text-white bsb-hover-fadeInLeft">Design</h3>
+                      <div class="text-white bsb-hover-fadeInRight">Gallery 9</div>
+                    </figcaption>
+                  </figure>
+                </div>
+  
+                <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item mt-2">
+                    <figure class="rounded rounded-4 overflow-hidden bsb-overlay-hover">
+                      <a href="assets/img/gallery_picture3.jpg" class="gallery-link" data-fancybox="charity-gallery" data-caption="Gallery 10">
+                        <img class="img-fluid bsb-scale-up bsb-hover-scale" src="assets/img/gallery_picture3.jpg" alt="Gallery 10">
+                      </a>
+                      <figcaption>
+                        <h3 class="text-white bsb-hover-fadeInLeft">Code</h3>
+                        <div class="text-white bsb-hover-fadeInRight">Gallery 10</div>
+                      </figcaption>
+                    </figure>
+                </div>
+  
+              </div>
             </div>
-            <div class="gallery-item">
-                <a href="assets/img/Arash.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 2">
-                    <img src="assets/img/Arash.png" alt="Activity 2">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="assets/img/kidohelp_insta_2.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 3">
-                    <img src="assets/img/kidohelp_insta_2.png" alt="Activity 3">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="assets/img/kidohelp_insta_3.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 4">
-                    <img src="assets/img/kidohelp_insta_3.png" alt="Activity 4">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="assets/img/kidohelp_insta_4.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 5">
-                    <img src="assets/img/kidohelp_insta_4.png" alt="Activity 5">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="assets/img/kidocode_family.jpeg" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 6">
-                    <img src="assets/img/kidocode_family.jpeg" alt="Activity 6">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="assets/img/kidocode_logo_outline.jpg" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 7">
-                    <img src="assets/img/kidocode_logo_outline.jpg" alt="Activity 7">
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="assets/img/kidocode_title_logo.png" class="gallery-link" data-fancybox="charity-gallery" data-caption="Activity 8">
-                    <img src="assets/img/kidocode_title_logo.png" alt="Activity 8">
-                </a>
-            </div>
-        </div>
-        </section>
+          </section>
 
 
         <!--Outcomes-->
@@ -1338,6 +1405,12 @@
                 document.getElementById("form").reset();
             };
         </script>
+
+<script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/controller/project-1.js"></script>
       
     </body>
 </html>
