@@ -26,6 +26,28 @@ body {
     z-index: -1; /* Place the overlay behind the text */
 }
 
+/* Default Accordion Button Style */
+.accordion-button {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Custom Style for Accordion Button when expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #0057FA; /* Change to desired color */
+    color: white; /* Text color when expanded */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.125); /* Remove any lingering shadow */
+}
+
+/* Custom Style for Accordion Button when collapsed */
+.accordion-button.collapsed {
+    background-color: #ffffff; /* Change to desired color */
+    color: #000; /* Text color when collapsed */
+}
+
+/* Reset Focus Styles to Avoid Lingering Effects */
+.accordion-button:focus {
+    box-shadow: none; /* Remove focus shadow */
+}
 
 header,section{
     border-bottom: 3px solid black;
@@ -489,12 +511,29 @@ p {
     }
 }
 
-/* Styling the indicator dots */
-.owl-dot {
-    width: 12px; /* Set width */
-    height: 12px; /* Set height */
-    margin: 5px; /* Spacing between dots */
-    display: inline-block;
+/* Change the default color of the dots */
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #A4A4AE; /* CG-06: A subtle, neutral gray */
+}
+
+/* Change the color of the active dot */
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #0D1321; /* Black: A strong, elegant black for emphasis */
+}
+
+/* Optional: Change color on hover */
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #126DF2; /* Purple: A rich, sophisticated purple */
+}
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    border-radius: 50%;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
+    color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
 }
 
 
