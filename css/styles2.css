@@ -56,7 +56,7 @@ header,section{
 /* Specific styles for the custom card */
 .testinomials-video{
     border-radius: 30px;
-    max-height: 600px;
+    max-height: 400px;
     max-width: 600px;
 }
 
@@ -170,8 +170,7 @@ h2 {
 
 .q-a {
     font-size: 0.95rem;
-    border-bottom:
-    1.5px solid var(--light-grayish-blue);
+    
     padding-bottom: 1.05em;
     margin-top: 1.05em;
 }
@@ -184,15 +183,15 @@ h2 {
 h3 {
     font-size: 0.95rem;
     grid-column: 1;
-    color: var(--very-dark-grayish-blue);
+    color: #0D1321;
     cursor: pointer;
 
     &:hover {
-    color: var(--soft-red);
+    color: #06BDFC;
     }
 
     &.h3-active {
-    color: var(--very-dark-blue);
+    color: #0057FA;
     font-weight: 700;
     }
 }
@@ -202,7 +201,7 @@ svg {
     justify-self: end;
     cursor: pointer;
     transition: transform 0.2s;
-
+    
     &.svg-animation {
     transform: rotate(180deg);
     }
@@ -211,7 +210,7 @@ svg {
 p {
     display: none;
     width: calc(100% - calc(10px + 0.7rem));
-    color: var(--dark-grayish-blue);
+    color: #0D1321;
     margin-top: 1.05em;
 
     &.p-visible {
@@ -219,81 +218,6 @@ p {
     }
 }
 }
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
-    justify-content: center; /* Centers the grid horizontally */
-    align-items: center; /* Centers the grid items vertically */
-}
-
-.gallery-item {
-    display: flex; /* Makes the gallery-item a flex container */
-    justify-content: center; /* Centers the image horizontally within the item */
-    align-items: center; /* Centers the image vertically within the item */
-    overflow: hidden;
-}
-
-.gallery-item img {
-    max-width: 100%; /* Ensures the image scales properly */
-    max-height: 100%; /* Ensures the image scales properly */
-    height: auto;
-    width: auto;
-    display: block;
-}
-
-
-/* Gradient 1: Sunset Vibes */
-.bg-gradient-1 {
-    background: linear-gradient(to right, #f9d423, #ff4e50); /* Bright Yellow to Red */
-}
-
-/* Gradient 2: Ocean Breeze */
-.bg-gradient-2 {
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* Sky Blue to Ocean Blue */
-}
-
-/* Gradient 3: Minty Fresh */
-.bg-gradient-3 {
-    background: linear-gradient(to right, #a8e063, #d6f5d6); /* Mint Green to Light Green */
-}
-
-/* Gradient 4: Peachy Pink */
-.bg-gradient-4 {
-    background: linear-gradient(to right, #fbc2eb, #a6c0fe); /* Peach Pink to Light Blue */
-}
-
-/* Gradient 5: Lavender Fields */
-.bg-gradient-5 {
-    background: linear-gradient(to right, #e6a9f0, #a2c2e2); /* Lavender to Light Blue */
-}
-
-/* Gradient 6: Tropical Sunset */
-.bg-gradient-6 {
-    background: linear-gradient(to right, #ff6f61, #d4a5a5); /* Coral to Light Coral */
-}
-
-/* Gradient 7: Juicy Mango */
-.bg-gradient-7 {
-    background: linear-gradient(to right, #f9d423, #ff4e50); /* Mango Yellow to Juicy Red */
-}
-
-/* Gradient 8: Sky and Sea */
-.bg-gradient-8 {
-    background: linear-gradient(to right, #4facfe, #00f2fe); /* Sky Blue to Aqua Blue */
-}
-
-/* Gradient 9: Soft Berry */
-.bg-gradient-9 {
-    background: linear-gradient(to right, #f79a7b, #f2c7d5); /* Soft Berry to Light Pink */
-}
-
-/* Gradient 10: Fun Lemonade */
-.bg-gradient-10 {
-    background:linear-gradient(#ffdad5,#fff7f9);
-}
-
 
 #about img {
     max-width: 80%; /* Ensures the image doesn't exceed 80% of the container width */
@@ -319,7 +243,6 @@ p {
     padding: 0%;
 }
 .contact-container{
-    background-color: #0057FA;
     height:100vh;
     display:flex;
     align-items:center;
@@ -365,7 +288,7 @@ p {
 }
 
 .contact-inputs:focus{
-    border:2px solid #ff994f;
+    border:2px solid #0057FA;
 }
 
 .contact-inputs::placeholder{
@@ -381,7 +304,7 @@ p {
     gap:10px;
     border:none;
     border-radius: 50px;
-    background:linear-gradient(270deg,#ff994f,#fa6d86);
+    background:#0057FA;
     cursor:pointer;
 }
 
@@ -544,8 +467,6 @@ p {
 }
 
 
-
-
 /* Reduce margin between nav items */
 .navbar-nav .nav-item {
     margin: 0.5rem;
@@ -572,11 +493,49 @@ p {
     justify-content: flex-start; /* or center, depending on your layout */
 }
 
+/* Ensure dropdowns open on top of other content without shifting layout */
+.navbar .dropdown-menu {
+    position: absolute; /* Position the dropdown absolutely */
+    left: 0; /* Align it to the left of the parent */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Adjust the dropdown width and prevent it from expanding too much */
+.navbar .dropdown-menu {
+    min-width: 100px; /* Set a reasonable minimum width */
+    max-width: 300px; /* Set a maximum width to avoid excessive expansion */
+}
+
+/* Ensure the dropdown is contained within the navbar */
+.navbar .dropdown {
+    position: relative; /* Ensure dropdown is positioned relative to its parent */
+}
+
+
+
+/* Adjustments for smaller screens (less than lg) */
+@media (max-width: 991.98px) {
+    /* Optional: Limit the height for vertical scrolling, useful if you have many items */
+    .navbar-nav {
+        max-height: 50vh; /* Limit the height of the navbar on smaller screens */
+        overflow-y: auto; /* Enable vertical scrolling if items overflow */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5vh; /* Smaller margin for better fit */
+    }
+
+    .navbar {
+        max-height: 70vh; /* Adjust the height limit for smaller screens */
+        overflow-y: auto; /* Enable scrolling within the navbar */
+    }
+}
+
 /*footer*/
 .footer {
     position: relative;
+    background-color: #0D1321;
     width: 100%;
-    background: linear-gradient(#F8AA3D,#f57133);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -608,6 +567,7 @@ p {
     transition: 0.5s;
 }
 .social-icon__link:hover {
+    color: #ffffff;
     transform: translateY(-10px);
 }
 
@@ -618,12 +578,12 @@ p {
     display: inline-block;
     transition: 0.5s;
     text-decoration: none;
-    opacity: 0.75;
     font-weight: 300;
 }
 
 .menu__link:hover {
-    opacity: 1;
+    color: #06BDFC;
+    transform: translateY(-5px);
 }
 
 .footer p {
@@ -633,58 +593,3 @@ p {
     font-weight: 300;
 }
 
-.wave {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url("assets/img/wave_orange.png");
-    background-size: 1000px 100px;
-}
-
-.wave#wave1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWaves 4s linear infinite;
-}
-
-.wave#wave2 {
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animate 4s linear infinite !important;
-}
-
-.wave#wave3 {
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animateWaves 3s linear infinite;
-}
-
-.wave#wave4 {
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animate 3s linear infinite;
-}
-
-@keyframes animateWaves {
-    0% {
-    background-position-x: 1000px;
-    }
-    100% {
-    background-position-x: 0px;
-    }
-}
-
-@keyframes animate {
-    0% {
-    background-position-x: -1000px;
-    }
-    100% {
-    background-position-x: 0px;
-    }
-}

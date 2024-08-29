@@ -27,8 +27,6 @@ This is a charity website build by me and other interns at Kidocode for the Kido
 6. Social Media/photography(add to navbar)
 7. ~~gallery~~
 8. ~~Testinmonials~~ and stories
-    - instagram video and its description(We're thrilled to kick off our KidoHelp program at the children's shelter, spreading joy and tech knowledge to empower the next generation. We believe every child should have access to innovative learning opportunities in digital literacy such as coding, robotics, AI, and more, paving the way for brighter futures 💻🤖🌟
-)
 9. ~~Partners~~
 10. ~~FAQs~~
 11. ~~Contact~~
