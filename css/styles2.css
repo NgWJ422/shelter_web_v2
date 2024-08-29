@@ -34,7 +34,7 @@ html, body {
 }
 #program{
     background-color: #632CD0;
-h1{
+h2{
     color: white;
 }
 
@@ -48,12 +48,15 @@ h4{
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+
+
 /* Custom Style for Accordion Button when expanded */
 .accordion-button:not(.collapsed) {
     background-color: #0057FA; /* Change to desired color */
     color: white; /* Text color when expanded */
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.125); /* Remove any lingering shadow */
 }
+
 
 /* Custom Style for Accordion Button when collapsed */
 .accordion-button.collapsed {
@@ -72,7 +75,7 @@ header,section{
 
 #testinomials{
     background-color: #FFFBF3;
-h1{
+h2{
     color: #0057FA;
 }
 .card{
@@ -90,7 +93,7 @@ h1{
 
 #outcomes{
     background-color: #FFFBF3;
-h1{
+h2{
     color: #0057FA;
 }
 }
@@ -147,7 +150,7 @@ margin-bottom: 0;
 
 #objectives{
     background-color: #FFFBF3;
-h1{
+h2{
     color: #0057FA;
 }
 
@@ -219,7 +222,7 @@ background-position: 50% 0%, 50% 100%;
 }
 
 #faq{
-    background-color: #F881ED;
+    background-color: #0D1321;
 }
 
 .faq {
