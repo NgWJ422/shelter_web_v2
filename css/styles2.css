@@ -4,6 +4,12 @@ body {
     overflow-x: hidden;
 }
 
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .masthead-title{
     color: rgb(255, 255, 255);
     font-weight: 900;
@@ -25,6 +31,16 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
     z-index: -1; /* Place the overlay behind the text */
+}
+#program{
+    background-color: #632CD0;
+h1{
+    color: white;
+}
+
+h4{
+    color: #0057FA;
+}
 }
 
 /* Default Accordion Button Style */
@@ -54,11 +70,55 @@ header,section{
     border-bottom: 3px solid black;
 }
 
+#testinomials{
+    background-color: #FFFBF3;
+h1{
+    color: #0057FA;
+}
+.card{
+    border: 3px dashed #0D1321;
+}
+
+}
+
 /* Specific styles for the custom card */
 .testinomials-video{
     border-radius: 30px;
-    max-height: 400px;
+    max-height: 300px;
     max-width: 600px;
+}
+
+#outcomes{
+    background-color: #FFFBF3;
+h1{
+    color: #0057FA;
+}
+}
+
+
+
+#about h2{
+    color: #632CD0;
+    
+}
+
+#about .btn {
+    background-color: #F881ED; /* Pink */
+    color: white;  /* Text color */
+    border: none;  /* Optional: Remove border if needed */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border-radius: 0.25rem; /* Optional: Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change color on hover */
+#about .btn:hover {
+    background-color: #FF931E; /* Orange */
+}
+
+/* Change color when clicked (active) */
+#about .btn:active {
+    background-color: #EE3F36; /* Red */
 }
 
 .custom-card .custom-card-body {
@@ -81,12 +141,18 @@ margin-bottom: 0;
 }
 }
 
-
-#faq {
-background-image:
-    linear-gradient(var(--soft-violet), var(--soft-blue));
-    margin: 0px;
+#gallery{
+    background-color: white;
 }
+
+#objectives{
+    background-color: #FFFBF3;
+h1{
+    color: #0057FA;
+}
+
+}
+
 
 article {
 display: grid;
@@ -98,6 +164,17 @@ margin: auto;
 @media (min-width: 57.06rem) {
     grid-template-columns: 22.5rem 1fr;
 }
+}
+
+#partners{
+    background-color: #FFFBF3;
+h1{
+    color: #0057FA;
+}
+}
+
+#partners .card{
+    border: 3px dashed #0D1321;
 }
 
 .img-container {
@@ -141,6 +218,10 @@ background-position: 50% 0%, 50% 100%;
 }
 }
 
+#faq{
+    background-color: #F881ED;
+}
+
 .faq {
 grid-row: 2 / span 2;
 grid-column: 1;
@@ -157,7 +238,6 @@ box-shadow: 0 0.62rem 1.87rem hsla(0, 0%, 0%, .2);
 }
 
 h2 {
-    color: var(--very-dark-blue);
     font-weight: 700;
     font-size: 1.8rem;
     text-align: center;
@@ -242,6 +322,7 @@ p {
     overflow: hidden;
     margin: 0px;
     padding: 0%;
+    background-color: #632CD0;
 }
 .contact-container{
     height:100vh;
@@ -261,6 +342,14 @@ p {
     font-weight:600;
     font-size:40px;
     margin-bottom:5px;
+    color: white;
+}
+
+.contact-left-title p{
+    font-weight:600;
+    font-size:20px;
+    margin-bottom:5px;
+    color: #F881ED;
 }
 
 .contact-left-title hr{
@@ -269,6 +358,7 @@ p {
     height:5px;
     border-radius:10px;
     margin-bottom:20px;
+    border: 5px solid #F881ED;
 }
 
 .contact-inputs{
@@ -289,7 +379,7 @@ p {
 }
 
 .contact-inputs:focus{
-    border:2px solid #0057FA;
+    border:2px solid #06BDFC;
 }
 
 .contact-inputs::placeholder{
@@ -301,11 +391,11 @@ p {
     align-items:center;
     padding:15px 30px;
     font-size:16px;
-    color:#fff;
+    color:white;
     gap:10px;
     border:none;
     border-radius: 50px;
-    background:#0057FA;
+    background:#F881ED;
     cursor:pointer;
 }
 
@@ -649,3 +739,33 @@ p {
         display: inline-block;
     }
 }
+
+.filler_rainbow {
+    background: linear-gradient(
+        135deg,  /* Diagonal flow for more natural transition */
+        #FF5400,  /* Orange-B */
+        #FF931E,  /* Orange */
+        #FFD500,  /* Yellow */
+        #DEFF04,  /* Lime */
+        #3AC152,  /* Green */
+        #06BDFC,  /* Capri */
+        #126DF2,  /* Blue-B */
+        #632CD0,  /* Purple */
+        #F881ED,  /* Pink */
+        #FF5400   /* Repeat Orange-B to create a seamless loop */
+    );
+    background-size: 300% 300%;  /* Increase both dimensions for smoother transition */
+    animation: flowDiagonal 5s linear infinite;  /* Adjust duration for smooth looping */
+    height: 5vh;  /* Adjust height as needed */
+}
+
+/* Define the seamless diagonal flowing animation */
+@keyframes flowDiagonal {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;  /* Diagonal direction */
+    }
+}
+
