@@ -1,6 +1,7 @@
 /* Apply Plus Jakarta Sans to all text content */
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .masthead-title{
@@ -530,8 +531,7 @@ p {
         overflow-y: auto; /* Enable scrolling within the navbar */
     }
 }
-
-/*footer*/
+/* Footer */
 .footer {
     position: relative;
     background-color: #0D1321;
@@ -551,7 +551,7 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if necessary */
 }
 
 .social-icon__item,
@@ -566,6 +566,7 @@ p {
     display: inline-block;
     transition: 0.5s;
 }
+
 .social-icon__link:hover {
     color: #ffffff;
     transform: translateY(-10px);
@@ -593,3 +594,58 @@ p {
     font-weight: 300;
 }
 
+/* Custom CSS for footer menu links */
+.footer .menu__link {
+    font-size: 1rem; /* Default size for large screens */
+}
+
+@media (max-width: 768px) {
+    .footer .menu__link {
+        font-size: 0.875rem; /* Slightly smaller size for medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer .menu__link {
+        font-size: 0.75rem; /* Smaller size for small screens */
+    }
+}
+
+.footer .menu__item {
+    margin-bottom: 0.5rem;
+}
+
+/* Horizontal arrangement on smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 30px;
+    }
+
+    .footer .menu {
+        justify-content: space-around; /* Spread items more evenly */
+    }
+
+    .footer .menu__item {
+        margin-bottom: 0.5rem; /* Ensure consistent spacing */
+    }
+
+    .footer .menu__link {
+        margin: 5px 8px; /* Adjust spacing between links */
+        display: inline-block;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 15px;
+    }
+
+    .footer .menu {
+        justify-content: space-evenly; /* Spread items as evenly as possible */
+    }
+
+    .footer .menu__link {
+        margin: 5px 5px; /* Further adjust spacing */
+        display: inline-block;
+    }
+}
