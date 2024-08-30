@@ -171,7 +171,7 @@ margin: auto;
 
 #partners{
     background-color: #FFFBF3;
-h1{
+h2{
     color: #0057FA;
 }
 }
@@ -319,6 +319,7 @@ p {
     box-sizing: border-box;
     overflow: hidden;
 }
+
 #contact {
     max-width: 100%;
     box-sizing: border-box;
@@ -328,10 +329,10 @@ p {
     background-color: #632CD0;
 }
 .contact-container{
-    height:100vh;
+    height: 800px;
     display:flex;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:center;
 }
 
 .contact-left{
@@ -339,6 +340,7 @@ p {
     flex-direction:column;
     align-items:start;
     gap:20px;
+    max-width: 50%;
 }
 
 .contact-left-title h2{
@@ -353,6 +355,7 @@ p {
     font-size:20px;
     margin-bottom:5px;
     color: #F881ED;
+    max-width: 70%;
 }
 
 .contact-left-title hr{
@@ -405,19 +408,37 @@ p {
 .contact-left button img{
     height:15px;
 }
-.contact-right img{
-    width:300px;
+.contact-right {
+    display: flex;
+    justify-content: center; /* Center the image horizontally within its container */
+    align-items: center; /* Center the image vertically within its container */
+    margin-top: 20px; /* Add margin-top to ensure space from the input section */
+}
+
+.contact-right img {
+    width: 300px;
 }
 
 @media (max-width:800px){
     .contact-inputs{
-    width:80vw;
+        width:80vw;
     }
     .contact-right{
-    display:none;
+        display:none;
     }
+    .contact-left-title p{
+        max-width: 100%;
+    }
+    .contact-left{
+        max-width: 100%;
+    }
+    
 }
-    /* Custom card styling */
+
+#contact-d2{
+    color: #06BDFC;
+}
+/* Custom card styling */
 
 .card {
     border: none;
