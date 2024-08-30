@@ -320,6 +320,13 @@ p {
     overflow: hidden;
 }
 
+
+#founders .card{
+    border: 2px solid #0D1321;
+    box-shadow: #0D1321 3px 3px 3px;
+}
+
+
 #contact {
     max-width: 100%;
     box-sizing: border-box;
