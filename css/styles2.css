@@ -326,6 +326,11 @@ p {
     box-shadow: #0D1321 3px 3px 3px;
 }
 
+#partners q {
+    font-weight: bold;
+    display: block; /* This makes the quote occupy its own line */
+    margin: 0.5rem 0; /* Optional: add some margin around the quote */
+  }
 
 #contact {
     max-width: 100%;
@@ -336,7 +341,7 @@ p {
     background-color: #632CD0;
 }
 .contact-container{
-    height: 800px;
+    height: 850px;
     display:flex;
     align-items:center;
     justify-content:center;
