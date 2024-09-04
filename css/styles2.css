@@ -165,7 +165,7 @@ h2{
 .timeline-line {
     position: absolute;
     top: 0.75rem;
-    left: 1rem; /* Adjust as needed */
+    left: 2rem; /* Adjust as needed */
     width: calc(100% - 2rem); /* Ensure it spans the full width minus padding */
     height: 2px;
     background-color: #000; /* Or any color of your choice */
@@ -177,7 +177,7 @@ h2{
 .item .time {
     position: relative;
     left: 40%; /* Center horizontally */
-    width: 7rem; /* Ensure time is correctly positioned */
+    width: 6rem; /* Ensure time is correctly positioned */
     text-align: center;
     background: #fff; /* Background color if needed */
     z-index: 2; /* Ensure it appears above the line */
