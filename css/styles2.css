@@ -105,7 +105,7 @@ h2{
     
 }
 
-#about .btn {
+#about .btn, #gallery .btn {
     background-color: #F881ED; /* Pink */
     color: white;  /* Text color */
     border: none;  /* Optional: Remove border if needed */
@@ -115,12 +115,12 @@ h2{
 }
 
 /* Change color on hover */
-#about .btn:hover {
+#about .btn:hover, #gallery .btn:hover {
     background-color: #FF931E; /* Orange */
 }
 
 /* Change color when clicked (active) */
-#about .btn:active {
+#about .btn:active, #gallery .btn:active {
     background-color: #EE3F36; /* Red */
 }
 
@@ -155,6 +155,34 @@ h2{
 }
 
 }
+
+/* Ensure that the timeline line is positioned correctly */
+.timeline-wrapper {
+    position: relative;
+    padding-left: 2rem; /* Adjust to align the timeline with your content */
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem; /* Adjust as needed */
+    width: calc(100% - 2rem); /* Ensure it spans the full width minus padding */
+    height: 2px;
+    background-color: #000; /* Or any color of your choice */
+    z-index: 1; /* Ensure it is below the cards */
+}
+
+
+
+.item .time {
+    position: relative;
+    left: 40%; /* Center horizontally */
+    width: 7rem; /* Ensure time is correctly positioned */
+    text-align: center;
+    background: #fff; /* Background color if needed */
+    z-index: 2; /* Ensure it appears above the line */
+}
+
 
 
 article {
