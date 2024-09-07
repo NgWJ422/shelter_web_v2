@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -159,16 +158,16 @@ h2{
 /* Ensure that the timeline line is positioned correctly */
 .timeline-wrapper {
     position: relative;
-    padding-left: 2rem; /* Adjust to align the timeline with your content */
+    padding-left: 1rem;
 }
 
 .timeline-line {
     position: absolute;
     top: 0.75rem;
-    left: 2rem; /* Adjust as needed */
-    width: calc(100% - 2rem); /* Ensure it spans the full width minus padding */
+    left: 1rem; /* Adjust as needed */
+    width: calc(100% - 1rem); /* Ensure it spans the full width minus padding */
     height: 2px;
-    background-color: #000; /* Or any color of your choice */
+    background-color: #0D1321; /* Or any color of your choice */
     z-index: 1; /* Ensure it is below the cards */
 }
 
@@ -176,13 +175,23 @@ h2{
 
 .item .time {
     position: relative;
-    left: 40%; /* Center horizontally */
+    left: 45%;
     width: 6rem; /* Ensure time is correctly positioned */
     text-align: center;
     background: #fff; /* Background color if needed */
     z-index: 2; /* Ensure it appears above the line */
+    border: 3px solid #0D1321
 }
-
+@media (max-width: 800px) {
+    .item .time{
+        left:40%;
+    }
+}
+@media (max-width: 395px) {
+    .item .time{
+        left:30%;
+    }
+}
 
 
 article {
@@ -488,15 +497,13 @@ p {
     transition: transform 0.2s ease-in-out;
 }
 
-/* .card:hover {
-    transform: translateX(-5px);
-} */
 
 .card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
-    height: 200px;
+    width: 256px;
+
 }
 
 .card-body {
@@ -549,6 +556,22 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
     z-index: 1000;
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+#contribution{
+    .owl-nav .owl-prev {
+        left: -20px; /* Adjust to stay within the container */
+        background-color: #FFFFFF;
+    }
+    
+    .owl-nav .owl-next {
+        right: -20px; /* Adjust to stay within the container */
+        background-color: #FFFFFF;
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
+        color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
+    }
 }
 
 /* Position adjustments */
@@ -686,6 +709,10 @@ p {
         overflow-y: auto; /* Enable scrolling within the navbar */
     }
 }
+
+
+
+
 /* Footer */
 .footer {
     position: relative;
