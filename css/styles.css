@@ -10898,6 +10898,7 @@ hr.divider-light {
   #mainNav {
     box-shadow: none;
     background-color: transparent;
+    backdrop-filter: blur(2px);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);

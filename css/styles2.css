@@ -12,14 +12,21 @@ html, body {
 .masthead-title{
     color: rgb(255, 255, 255);
     font-weight: 900;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
 .masthead-text {
+
     position: relative; /* Ensure it’s positioned relative for z-index */
     color: rgb(255, 255, 255);
     padding: 10px; /* Add padding to ensure text isn't too close to the edges */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust values as needed */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adjust values as needed */
 }
+
+/* #masthead-span-text,#masthead-span-title{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+} */
 
 .masthead-text::before {
     content: "";
@@ -175,19 +182,24 @@ h2{
 
 .item .time {
     position: relative;
-    left: 45%;
-    width: 6rem; /* Ensure time is correctly positioned */
+    left: 30%;
+    width: 8rem; /* Ensure time is correctly positioned */
     text-align: center;
     background: #fff; /* Background color if needed */
     z-index: 2; /* Ensure it appears above the line */
     border: 3px solid #0D1321
 }
-@media (max-width: 800px) {
+@media (max-width: 991px) {
     .item .time{
-        left:40%;
+        left:35%;
     }
 }
-@media (max-width: 395px) {
+@media (max-width: 767px) {
+    .item .time{
+        left:25%;
+    }
+}
+@media (max-width: 576px) {
     .item .time{
         left:30%;
     }
@@ -559,6 +571,7 @@ p {
 }
 
 #contribution{
+
     .owl-nav .owl-prev {
         left: -20px; /* Adjust to stay within the container */
         background-color: #FFFFFF;
@@ -573,6 +586,8 @@ p {
         color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
     }
 }
+
+
 
 /* Position adjustments */
 .owl-nav .owl-prev {
@@ -860,4 +875,3 @@ p {
         background-position: 0% 0%;  /* Diagonal direction */
     }
 }
-
