@@ -75,7 +75,7 @@ h4{
     box-shadow: none; /* Remove focus shadow */
 }
 
-header,section{
+header{
     border-bottom: 3px solid black;
 }
 
@@ -111,7 +111,7 @@ h2{
     
 }
 
-#about .btn, #gallery .btn {
+#about .btn, #gallery .btn ,#contribution .btn{
     background-color: #F881ED; /* Pink */
     color: white;  /* Text color */
     border: none;  /* Optional: Remove border if needed */
@@ -121,12 +121,12 @@ h2{
 }
 
 /* Change color on hover */
-#about .btn:hover, #gallery .btn:hover {
+#about .btn:hover, #gallery .btn:hover ,#contribution .btn:hover{
     background-color: #FF931E; /* Orange */
 }
 
 /* Change color when clicked (active) */
-#about .btn:active, #gallery .btn:active {
+#about .btn:active, #gallery .btn:active ,#contribution .btn:active{
     background-color: #EE3F36; /* Red */
 }
 
@@ -656,14 +656,14 @@ p {
 
 /* Reduce padding for nav links to make the navbar more compact */
 .navbar-nav .nav-link {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
 }
 
 
 /* Reduce margin between nav items */
 .navbar-nav .nav-item {
-    margin: 0.5rem;
+    margin: 0.4rem;
 }
 
 /* Optional: Decrease font size to fit more items */
@@ -676,10 +676,7 @@ p {
     margin-left: 0.25rem;
 }
 
-/* Adjust navbar-brand spacing to make more room */
-.navbar-brand {
-    margin-right: 1rem;
-}
+
 
 .navbar-nav {
     display: flex;
@@ -864,6 +861,8 @@ p {
     background-size: 300% 300%;  /* Increase both dimensions for smoother transition */
     animation: flowDiagonal 5s linear infinite;  /* Adjust duration for smooth looping */
     height: 5vh;  /* Adjust height as needed */
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
 /* Define the seamless diagonal flowing animation */
