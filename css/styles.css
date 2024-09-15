@@ -10955,6 +10955,17 @@ header.masthead {
   background-size: cover;
 }
 
+/* Fallback for browsers that do not support WebP */
+@supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA") ) {
+  header.masthead {
+    background: linear-gradient(
+      to bottom, 
+      rgba(0, 87, 250, 0.5) 0%, 
+      rgba(99, 44, 208, 0.5) 50%, 
+      rgba(13, 19, 33, 0.5) 100%
+    ), url("../assets/img/kidocode_family_compressed.jpeg");
+  }
+}
 
 /* Responsive backgrounds */
 @media (max-width: 1024px) {
@@ -10968,7 +10979,18 @@ header.masthead {
   }
 }
 
-
+@media (max-width: 1024px) {
+  @supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA")) {
+    header.masthead {
+      background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 50%, 
+        rgba(13, 19, 33, 0.5) 100%
+      ), url("../assets/img/kidocode_family_compressed_1024p.jpeg");
+    }
+  }
+}
 
 @media (max-width: 600px) {
   header.masthead {
@@ -10978,6 +11000,19 @@ header.masthead {
       rgba(99, 44, 208, 0.5) 50%, 
       rgba(13, 19, 33, 0.5) 100%
     ), url("../assets/img/kidocode_family_compressed_480p.webp");
+  }
+}
+
+@media (max-width: 600px) {
+  @supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA")) {
+    header.masthead {
+      background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 50%, 
+        rgba(13, 19, 33, 0.5) 100%
+      ), url("../assets/img/kidocode_family_compressed_480p.jpeg");
+    }
   }
 }
 
