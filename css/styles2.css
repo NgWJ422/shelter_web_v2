@@ -732,7 +732,7 @@ p {
 
 /* Reduce margin between nav items */
 .navbar-nav .nav-item {
-    margin: 0.4rem;
+    margin: 0.3rem;
 }
 
 /* Optional: Decrease font size to fit more items */
@@ -745,8 +745,6 @@ p {
     margin-left: 0.25rem;
 }
 
-
-
 .navbar-nav {
     display: flex;
     flex-wrap: wrap;
@@ -758,12 +756,8 @@ p {
     position: absolute; /* Position the dropdown absolutely */
     left: 0; /* Align it to the left of the parent */
     z-index: 1000; /* Ensure it appears above other content */
-}
-
-/* Adjust the dropdown width and prevent it from expanding too much */
-.navbar .dropdown-menu {
-    min-width: 100px; /* Set a reasonable minimum width */
-    max-width: 300px; /* Set a maximum width to avoid excessive expansion */
+    min-width: 10rem; /* Set a reasonable minimum width */
+    max-width: 15rem; /* Set a maximum width to avoid excessive expansion */
 }
 
 /* Ensure the dropdown is contained within the navbar */
@@ -772,13 +766,12 @@ p {
 }
 
 
-
 /* Adjustments for smaller screens (less than lg) */
 @media (max-width: 991.98px) {
     /* Optional: Limit the height for vertical scrolling, useful if you have many items */
     .navbar-nav {
-        max-height: 50vh; /* Limit the height of the navbar on smaller screens */
-        overflow-y: auto; /* Enable vertical scrolling if items overflow */
+        max-height: 30vh; /* Limit the height of the navbar on smaller screens */
+
     }
 
     .navbar-nav .nav-item {
@@ -786,8 +779,7 @@ p {
     }
 
     .navbar {
-        max-height: 70vh; /* Adjust the height limit for smaller screens */
-        overflow-y: auto; /* Enable scrolling within the navbar */
+        max-height: 80vh; /* Adjust the height limit for smaller screens */
     }
 }
 

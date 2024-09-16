@@ -70,24 +70,33 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#objectives">Objectives</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#program">Program Structure</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About the KidoHelp
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#objectives">Objectives</a></li>
+                            <li><a class="dropdown-item" href="#program">Program Structures</a></li>
+                            <li><a class="dropdown-item" href="#contribution">Contributions</a></li>
+                            <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="#testinomials">Testinomials and Stories</a></li>
+                            <li><a class="dropdown-item" href="#outcomes">Outcomes</a></li>
+                            <li><a class="dropdown-item" href="#partners">Partners of KidoHelp</a></li>
+                            <li><a class="dropdown-item" href="#founders">Founders of KidoHelp</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testinomials">Testinomials and Stories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#outcomes">Outcomes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#courses">Our Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="ack-en.html">Acknowledgement</a></li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle language-selector" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Language
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="index-cn.html">中文</a></li>
-                        <li><a class="dropdown-item" href="index-bm.html">Bahasa Melayu</a></li>
+                        <li><a class="dropdown-item" href="index-bm.html">BM</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -1464,8 +1473,54 @@
                 e.stopPropagation();
               });
             });
-          </script>
+        </script>
 
-
+        <script>
+            $(document).ready(function() {
+                // Close the dropdown and collapse the navbar when a dropdown item is clicked
+                $('.dropdown-item').on('click', function() {
+                    var $dropdownMenu = $(this).closest('.dropdown-menu');
+                    var $dropdownToggle = $(this).closest('.dropdown').find('.dropdown-toggle');
+                    
+                    // Use Bootstrap's Dropdown method to hide the menu
+                    var dropdown = bootstrap.Dropdown.getInstance($dropdownToggle[0]);
+                    if (dropdown) {
+                        dropdown.hide();
+                    }
+            
+                    // Collapse the navbar if it's open
+                    var $navbarCollapse = $('.navbar-collapse');
+                    if ($navbarCollapse.hasClass('show')) {
+                        var navbar = bootstrap.Collapse.getInstance($navbarCollapse[0]);
+                        if (navbar) {
+                            navbar.hide();
+                        }
+                    }
+                });
+            
+                // Optional: Close the dropdown and collapse the navbar when clicking outside of them
+                $(document).on('click', function(e) {
+                    if (!$(e.target).closest('.navbar').length) {
+                        // Close the dropdowns
+                        var dropdowns = document.querySelectorAll('.dropdown-menu.show');
+                        dropdowns.forEach(function(dropdown) {
+                            var instance = bootstrap.Dropdown.getInstance(dropdown.previousElementSibling);
+                            if (instance) {
+                                instance.hide();
+                            }
+                        });
+            
+                        // Collapse the navbar if it's open
+                        var $navbarCollapse = $('.navbar-collapse');
+                        if ($navbarCollapse.hasClass('show')) {
+                            var navbar = bootstrap.Collapse.getInstance($navbarCollapse[0]);
+                            if (navbar) {
+                                navbar.hide();
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
