@@ -23,10 +23,6 @@ html, body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adjust values as needed */
 }
 
-/* #masthead-span-text,#masthead-span-title{
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px);
-} */
 
 .masthead-text::before {
     content: "";
@@ -37,6 +33,11 @@ html, body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
     z-index: -1; /* Place the overlay behind the text */
+}
+@media (max-width: 991.8px){
+    .masthead{
+        margin-top: 4rem;
+    }
 }
 #program{
     background-color: #632CD0;
@@ -767,10 +768,10 @@ p {
 
 
 /* Adjustments for smaller screens (less than lg) */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     /* Optional: Limit the height for vertical scrolling, useful if you have many items */
     .navbar-nav {
-        max-height: 30vh; /* Limit the height of the navbar on smaller screens */
+        max-height: 50vh; /* Limit the height of the navbar on smaller screens */
 
     }
 
@@ -782,9 +783,6 @@ p {
         max-height: 80vh; /* Adjust the height limit for smaller screens */
     }
 }
-
-
-
 
 /* Footer */
 .footer {

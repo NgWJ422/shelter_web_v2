@@ -10898,6 +10898,7 @@ hr.divider-light {
   color: #0057FA !important;
 }
 @media (min-width: 992px) {
+  
   #mainNav {
     box-shadow: none;
     background-color: transparent;
@@ -10943,7 +10944,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  animation: masthead_slide 50s infinite; /* Duration of 15 seconds */
+  animation: masthead_slide 16s infinite;
   background-blend-mode: overlay; /* Blend gradient and image */
   background-position: center;
   background-repeat: no-repeat;
@@ -10951,134 +10952,297 @@ header.masthead {
   background-size: cover;
 }
 
+/* Fallback for browsers that do not support WebP */
+@supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA") ) {
+  header.masthead {
+    animation: masthead_slide_fallback 16s infinite;
+  }
+}
+
 @keyframes masthead_slide {
   0% {
-      background: linear-gradient(
-          to top, 
-          rgba(0, 87, 250, 0.5) 0%, 
-          rgba(99, 44, 208, 0.5) 50%, 
-          rgba(13, 19, 33, 0.5) 100%
-      ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_1.webp");
-  }
-  10% {
-      background: linear-gradient(
-          to top, 
-          rgba(0, 87, 250, 0.5) 0%, 
-          rgba(99, 44, 208, 0.5) 50%, 
-          rgba(13, 19, 33, 0.5) 100%
-      ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp");
-  }
-  20% {
-      background: linear-gradient(
-          to top, 
-          rgba(0, 87, 250, 0.5) 0%, 
-          rgba(99, 44, 208, 0.5) 50%, 
-          rgba(13, 19, 33, 0.5) 100%
-      ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_4.webp");
-  }
-  30% {
-      background: linear-gradient(
-          to top, 
-          rgba(0, 87, 250, 0.5) 0%, 
-          rgba(99, 44, 208, 0.5) 50%, 
-          rgba(13, 19, 33, 0.5) 100%
-      ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_9.webp");
-  }
-  40% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_13.webp");
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    background-size: cover;
   }
-  50% {
+  17% {
+      background: linear-gradient(
+          to top, 
+          rgba(0, 87, 250, 0.5) 0%, 
+          rgba(99, 44, 208, 0.5) 80%, 
+          rgba(0, 0, 0, 1) 100%
+      ), url("../assets/img/kidohelp_pics/wsGallery_3.webp");
+      background-size: cover;
+  }
+  34% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_16.webp");
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_5.webp");
+    background-size: cover;
   }
-  60% {
+  51% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp");
+    background-size: cover;
+  }
+  68% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.webp");
+    background-size: cover;
+  }
+  85% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
     ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.webp");
-  }
-  70% {
-    background: linear-gradient(
-        to top, 
-        rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_4.webp");
-  }
-  80% {
-    background: linear-gradient(
-        to top, 
-        rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_7.webp");
-  }
-  90% {
-    background: linear-gradient(
-        to top, 
-        rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_9.webp");
+    background-size: cover;
   }
   100% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_1.webp");
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    background-size: cover;
   }
+
 }
 
-/* Fallback for browsers that do not support WebP */
-@supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA") ) {
-  header.masthead {
+@keyframes masthead_slide {
+  0% {
     background: linear-gradient(
-      to bottom, 
-      rgba(0, 87, 250, 0.5) 0%, 
-      rgba(99, 44, 208, 0.5) 50%, 
-      rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidocode_family_compressed.jpeg");
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    background-size: cover;
   }
+  17% {
+      background: linear-gradient(
+          to top, 
+          rgba(0, 87, 250, 0.5) 0%, 
+          rgba(99, 44, 208, 0.5) 80%, 
+          rgba(0, 0, 0, 1) 100%
+      ), url("../assets/img/kidohelp_pics/wsGallery_3.jpg");
+      background-size: cover;
+  }
+  34% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_5.jpg");
+    background-size: cover;
+  }
+  51% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.jpg");
+    background-size: cover;
+  }
+  68% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.jpg");
+    background-size: cover;
+  }
+  85% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.jpg");
+    background-size: cover;
+  }
+  100% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
+    background-size: cover;
+  }
+
 }
 
 /* Responsive backgrounds */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   header.masthead {
-    background-image: linear-gradient(
-      to bottom, 
-      rgba(0, 87, 250, 0.5) 0%, 
-      rgba(99, 44, 208, 0.5) 50%, 
-      rgba(13, 19, 33, 0.5) 100%
-    ), url("../assets/img/kidocode_family_compressed_1024p.webp");
+    animation: masthead_slide_mobile 50s infinite;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   @supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA")) {
     header.masthead {
-      background-image: linear-gradient(
-        to bottom, 
-        rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 50%, 
-        rgba(13, 19, 33, 0.5) 100%
-      ), url("../assets/img/kidocode_family_compressed_1024p.jpeg");
+      animation: masthead_slide_mobile_fallback 50s infinite;
     }
   }
 }
+@keyframes masthead_slide_mobile {
+  0% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    background-size: cover;
+  }
+  17% {
+      background: linear-gradient(
+          to top, 
+          rgba(0, 87, 250, 0.5) 0%, 
+          rgba(99, 44, 208, 0.5) 80%, 
+          rgba(0, 0, 0, 0.5) 100%
+      ), url("../assets/img/kidohelp_pics/wsGallery_3.webp");
+      background-size: cover;
+  }
+  34% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_5.webp");
+    background-size: cover;
+  }
+  51% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp");
+    background-size: cover;
+  }
+  68% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.webp");
+    background-size: cover;
+  }
+  85% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.webp");
+    background-size: cover;
+  }
+  100% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    background-size: cover;
+  }
 
+}
+
+@keyframes masthead_slide_mobile_fallback {
+  0% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
+    background-size: cover;
+  }
+  17% {
+      background: linear-gradient(
+          to top, 
+          rgba(0, 87, 250, 0.5) 0%, 
+          rgba(99, 44, 208, 0.5) 80%, 
+          rgba(0, 0, 0, 0.5) 100%
+      ), url("../assets/img/kidohelp_pics/wsGallery_3.jpg");
+      background-size: cover;
+  }
+  34% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_5.jpg");
+    background-size: cover;
+  }
+  51% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.jpg");
+    background-size: cover;
+  }
+  68% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.jpg");
+    background-size: cover;
+  }
+  85% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.jpg");
+    background-size: cover;
+  }
+  100% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
+    background-size: cover;
+  }
+
+}
 
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
