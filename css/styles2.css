@@ -50,6 +50,16 @@ h3{
     color: #0057FA;
 }
 }
+.carousel4{
+    margin-top:4rem;
+}
+.roadmap-timeline{
+    height: .3rem;
+    background-color: #06BDFC;
+    position: relative;
+    z-index: 999;
+}
+
 
 /* Default Accordion Button Style */
 .accordion-button {
@@ -120,6 +130,20 @@ h3{
     color: white;
     font-weight: 600;
 
+}
+/* Change the default color of the dots */
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #A4A4AE;
+}
+
+/* Change the color of the active dot */
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: white;
+}
+
+/* Optional: Change color on hover */
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #F881ED; /* Purple: A rich, sophisticated purple */
 }
 }
 
@@ -654,6 +678,20 @@ p {
     .card{
         background: linear-gradient(101deg,#7028e4 24%,#F881ED);
         color: white;
+    }
+    /* Change the default color of the dots */
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #A4A4AE;
+    }
+
+    /* Change the color of the active dot */
+    .owl-theme .owl-dots .owl-dot.active span {
+        background-color: white;
+    }
+
+    /* Optional: Change color on hover */
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: #F881ED; /* Purple: A rich, sophisticated purple */
     }
 }
 
