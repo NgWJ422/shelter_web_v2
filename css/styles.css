@@ -10944,7 +10944,14 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  animation: masthead_slide 16s infinite;
+  background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+  animation: masthead_slide 25s infinite;
+  animation-delay: 4s;
   background-blend-mode: overlay; /* Blend gradient and image */
   background-position: center;
   background-repeat: no-repeat;
@@ -10955,7 +10962,14 @@ header.masthead {
 /* Fallback for browsers that do not support WebP */
 @supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA") ) {
   header.masthead {
-    animation: masthead_slide_fallback 16s infinite;
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
+    animation: masthead_slide_fallback 25s infinite;
+    animation-delay: 4s;
   }
 }
 
@@ -10966,7 +10980,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    ), url("../assets/img/kidohelp_pics/wsGallery_3.webp");
     background-size: cover;
   }
   17% {
@@ -10975,19 +10989,10 @@ header.masthead {
           rgba(0, 87, 250, 0.5) 0%, 
           rgba(99, 44, 208, 0.5) 80%, 
           rgba(0, 0, 0, 1) 100%
-      ), url("../assets/img/kidohelp_pics/wsGallery_3.webp");
+      ), url("../assets/img/kidohelp_pics/wsGallery_5.webp");
       background-size: cover;
   }
   34% {
-    background: linear-gradient(
-        to top, 
-        rgba(0, 87, 250, 0.5) 0%, 
-        rgba(99, 44, 208, 0.5) 80%, 
-        rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_5.webp");
-    background-size: cover;
-  }
-  51% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
@@ -10996,7 +11001,7 @@ header.masthead {
     ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp");
     background-size: cover;
   }
-  68% {
+  51% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
@@ -11005,7 +11010,7 @@ header.masthead {
     ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.webp");
     background-size: cover;
   }
-  85% {
+  68% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
@@ -11014,7 +11019,7 @@ header.masthead {
     ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.webp");
     background-size: cover;
   }
-  100% {
+  85% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
@@ -11023,17 +11028,26 @@ header.masthead {
     ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
     background-size: cover;
   }
+  100% {
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 1) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_3.webp");
+    background-size: cover;
+  }
 
 }
 
-@keyframes masthead_slide {
+@keyframes masthead_slide_fallback {
   0% {
     background: linear-gradient(
         to top, 
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    ), url("../assets/img/kidohelp_pics/wsGallery_3.jpg");
     background-size: cover;
   }
   17% {
@@ -11042,7 +11056,7 @@ header.masthead {
           rgba(0, 87, 250, 0.5) 0%, 
           rgba(99, 44, 208, 0.5) 80%, 
           rgba(0, 0, 0, 1) 100%
-      ), url("../assets/img/kidohelp_pics/wsGallery_3.jpg");
+      ), url("../assets/img/kidohelp_pics/wsGallery_5.jpg");
       background-size: cover;
   }
   34% {
@@ -11051,7 +11065,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_5.jpg");
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.jpg");
     background-size: cover;
   }
   51% {
@@ -11060,7 +11074,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_2.jpg");
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.jpg");
     background-size: cover;
   }
   68% {
@@ -11069,7 +11083,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_14.jpg");
+    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.jpg");
     background-size: cover;
   }
   85% {
@@ -11078,7 +11092,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1920p/fbGallery_23.jpg");
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
     background-size: cover;
   }
   100% {
@@ -11087,7 +11101,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 1) 100%
-    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
+    ), url("../assets/img/kidohelp_pics/wsGallery_3.jpg");
     background-size: cover;
   }
 
@@ -11096,7 +11110,14 @@ header.masthead {
 /* Responsive backgrounds */
 @media (max-width: 992px) {
   header.masthead {
-    animation: masthead_slide_mobile 50s infinite;
+    background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.webp");
+    animation: masthead_slide_mobile 25s infinite;
+    animation-delay: 4s;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -11106,7 +11127,14 @@ header.masthead {
 @media (max-width: 992px) {
   @supports not (background-image: url("data:image/webp;base64,UklGRi4AAABXRUJQVlA4TAYAAAAvQW9Zs1EAAAAAABYAAI5z2F4HIsAAA")) {
     header.masthead {
-      animation: masthead_slide_mobile_fallback 50s infinite;
+      background: linear-gradient(
+        to top, 
+        rgba(0, 87, 250, 0.5) 0%, 
+        rgba(99, 44, 208, 0.5) 80%, 
+        rgba(0, 0, 0, 0.5) 100%
+    ), url("../assets/img/kidohelp_pics/wsGallery_1.jpg");
+      animation: masthead_slide_mobile_fallback 25s infinite;
+      animation-delay: 4s;
     }
   }
 }
@@ -11117,7 +11145,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_1.webp");
+    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_3.webp");
     background-size: cover;
   }
   17% {
@@ -11126,7 +11154,7 @@ header.masthead {
           rgba(0, 87, 250, 0.5) 0%, 
           rgba(99, 44, 208, 0.5) 80%, 
           rgba(0, 0, 0, 0.5) 100%
-      ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_3.webp");
+      ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_5.webp");
       background-size: cover;
   }
   34% {
@@ -11135,7 +11163,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_5.webp");
+    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_2.webp");
     background-size: cover;
   }
   51% {
@@ -11144,7 +11172,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_2.webp");
+    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_14.webp");
     background-size: cover;
   }
   68% {
@@ -11153,7 +11181,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_14.webp");
+    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_23.webp");
     background-size: cover;
   }
   85% {
@@ -11162,7 +11190,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_23.webp");
+    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_1.webp");
     background-size: cover;
   }
   100% {
@@ -11171,7 +11199,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_1.webp");
+    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_3.webp");
     background-size: cover;
   }
 
@@ -11184,7 +11212,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_1.jpg");
+    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_3.jpg");
     background-size: cover;
   }
   17% {
@@ -11193,7 +11221,7 @@ header.masthead {
           rgba(0, 87, 250, 0.5) 0%, 
           rgba(99, 44, 208, 0.5) 80%, 
           rgba(0, 0, 0, 0.5) 100%
-      ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_3.jpg");
+      ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_5.jpg");
       background-size: cover;
   }
   34% {
@@ -11202,7 +11230,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_5.jpg");
+    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_2.jpg");
     background-size: cover;
   }
   51% {
@@ -11211,7 +11239,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_2.jpg");
+    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_14.jpg");
     background-size: cover;
   }
   68% {
@@ -11220,7 +11248,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_14.jpg");
+    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_23.jpg");
     background-size: cover;
   }
   85% {
@@ -11229,7 +11257,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/fb_1024p/fbGallery_23.jpg");
+    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_1.jpg");
     background-size: cover;
   }
   100% {
@@ -11238,7 +11266,7 @@ header.masthead {
         rgba(0, 87, 250, 0.5) 0%, 
         rgba(99, 44, 208, 0.5) 80%, 
         rgba(0, 0, 0, 0.5) 100%
-    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_1.jpg");
+    ), url("../assets/img/kidohelp_pics/w_1024p/wsGallery_3.jpg");
     background-size: cover;
   }
 
