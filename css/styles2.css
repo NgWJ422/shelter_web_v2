@@ -42,6 +42,7 @@ html, body {
     background-color: #632CD0;
 h2{
     color: white;
+    font-size: 2rem;
 }
 
 h3{
@@ -80,14 +81,45 @@ header{
 }
 
 #testinomials{
-    background-color: #FFFBF3;
+    background-color: #0D1321;
 h2{
-    color: #0057FA;
+    color: white;
+    font-size: 2rem;
 }
-.card{
-    border: 3px dashed #0D1321;
+h3{
+    color: #F881ED;
+    font-size: 1.3rem;
 }
 
+#video .card{
+    background-color: #303033;
+    color: #A4A4AE;
+    font-weight: 700;
+    h4{
+        color: #632CD0;
+    }
+}
+
+.owl-nav .owl-prev {
+    left: -10px; /* Adjust to stay within the container */
+    background-color: #FFFFFF;
+}
+
+.owl-nav .owl-next {
+    right: -10px; /* Adjust to stay within the container */
+    background-color: #FFFFFF;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
+    color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
+}
+
+#kids .card-body{
+    background: linear-gradient(101deg,#7028e4 24%,#CA11B9);
+    color: white;
+    font-weight: 600;
+
+}
 }
 
 /* Specific styles for the custom card */
@@ -98,16 +130,23 @@ h2{
 }
 
 #outcomes{
-    background-color: #FFFBF3;
+    background-color: #632CD0;
 h2{
-    color: #0057FA;
+    color: white;
+    font-size: 2rem;
 }
 }
 
-
+#courses{
+    h2{
+        font-size:2rem;
+    }
+    
+}
 
 #about h2{
     color: #632CD0;
+    font-size: 2rem;
     
 }
 
@@ -151,14 +190,26 @@ margin-bottom: 0;
 }
 
 #gallery{
-    background-color: white;
+    h2{
+        font-size: 2rem;
+    }
 }
 
 #objectives{
-    background-color: #FFFBF3;
+    background-color: #0D1321;
 h2{
-    color: #0057FA;
+    font-size: 2rem;
+    color: white;
 }
+.card{
+    background-color: #303033;
+    color: #A4A4AE;
+    font-weight: 700;
+    h3{
+        color: #F881ED;
+    }
+}
+
 
 }
 
@@ -173,8 +224,8 @@ h2{
     top: 0.75rem;
     left: 1rem; /* Adjust as needed */
     width: calc(100% - 1rem); /* Ensure it spans the full width minus padding */
-    height: 2px;
-    background-color: #0D1321; /* Or any color of your choice */
+    height: 4px;
+    background-color: #632CD0; /* Or any color of your choice */
     z-index: 1; /* Ensure it is below the cards */
 }
 
@@ -185,9 +236,10 @@ h2{
     left: 30%;
     width: 8rem; /* Ensure time is correctly positioned */
     text-align: center;
-    background: #fff; /* Background color if needed */
     z-index: 2; /* Ensure it appears above the line */
-    border: 3px solid #0D1321
+    color: white;
+    font-weight: 700;
+    background-color: #0D1321;
 }
 @media (max-width: 991px) {
     .item .time{
@@ -222,6 +274,10 @@ margin: auto;
     background-color: #FFFBF3;
 h2{
     color: #0057FA;
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
 }
 }
 
@@ -291,7 +347,7 @@ box-shadow: 0 0.62rem 1.87rem hsla(0, 0%, 0%, .2);
 
 h2 {
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     margin: 1.2em 0;
 
@@ -369,6 +425,11 @@ p {
     overflow: hidden;
 }
 
+#founders{
+    h2{
+        font-size: 2rem;
+    }
+}
 
 #founders .card{
     border: 2px solid #0D1321;
@@ -406,7 +467,7 @@ p {
 
 .contact-left-title h2{
     font-weight:600;
-    font-size:40px;
+    font-size:2.5rem;
     margin-bottom:5px;
     color: white;
 }
@@ -571,7 +632,11 @@ p {
 }
 
 #contribution{
-
+    background-color: #0D1321;
+    h2{
+        font-size: 2rem;
+        color: white;
+    }
     .owl-nav .owl-prev {
         left: -20px; /* Adjust to stay within the container */
         background-color: #FFFFFF;
@@ -584,6 +649,10 @@ p {
     .owl-theme .owl-nav [class*=owl-]:hover {
         background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
         color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
+    }
+    .card{
+        background: linear-gradient(101deg,#7028e4 24%,#F881ED);
+        color: white;
     }
 }
 
