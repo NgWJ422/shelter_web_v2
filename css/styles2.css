@@ -108,7 +108,7 @@ h3{
     background: linear-gradient(101deg,#7028e4 24%,#CA11B9);
     color: white;
     font-weight: 600;
-
+    height: 10rem;
 }
 /* Change the default color of the dots */
 .owl-theme .owl-dots .owl-dot span {
@@ -672,6 +672,12 @@ p {
     .owl-theme .owl-dots .owl-dot:hover span {
         background-color: #F881ED; /* Purple: A rich, sophisticated purple */
     }
+    img{
+        height: 10rem;
+    }
+    .card-body{
+        height: 18rem;
+    }
 }
 
 
@@ -951,10 +957,13 @@ p {
     }
 }
 #program2{
-    background-color: #000000;
+    background-color: #0D1321;
 }
 
-
+#program2 h2{
+    color: white;
+    font-size: 2rem;
+}
 
 .timeline {
     list-style: none;
@@ -983,13 +992,12 @@ p {
     margin: 0;
     left: calc((100% - 6.4rem)/2);
     font-size: 1.8rem;
-    font-weight: 500;
-    padding: .1rem;
+    font-weight: 600;
+    padding: .2rem;
     border: .5rem solid #632CD0;
     background-color: #632CD0;
     color: white;
     border-radius: 15%;
-    
 }
 
 .timeline > li {
@@ -1115,9 +1123,7 @@ p {
 #phase3 {
     margin-top: -5rem;
 }
-*{
-    border: 1px solid red;
-}
+
 
 #program2 ul{
     margin-bottom: 0;
