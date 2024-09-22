@@ -1027,6 +1027,7 @@ p {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 10;
 }
 #phase1 .card,#phase2 .card,#phase3 .card{
     width: 100%;
@@ -1107,6 +1108,21 @@ p {
     margin-top: 0.3rem;
 }
 
+#phase2 {
+    margin-top: -7rem;
+}
+
+#phase3 {
+    margin-top: -5rem;
+}
+*{
+    border: 1px solid red;
+}
+
+#program2 ul{
+    margin-bottom: 0;
+}
+
 @media (max-width: 992px) {
     ul.timeline:before {
         left: 3.0625rem;
@@ -1144,6 +1160,13 @@ p {
         border-right-width: 1rem;
         left: -1rem;
         right: auto;
+    }
+    #phase2 {
+        margin-top: 0;
+    }
+    
+    #phase3 {
+        margin-top: 0;
     }
 }
 
