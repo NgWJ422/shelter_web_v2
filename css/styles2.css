@@ -145,7 +145,34 @@ h2{
     h2{
         font-size:2rem;
     }
+    .card{
+        border: 1px solid #0D1321;
+        border-left: 3px solid #0D1321;
+        box-shadow: 0 2px 2px black;
+    }
+    img{
+        height: 15rem;
+    }
+    .card-body{
+        height: 10rem;
+    }
+    .owl-nav .owl-prev {
+        left: -20px; /* Adjust to stay within the container */
+        background-color: #FFFFFF;
+    }
     
+    .owl-nav .owl-next {
+        right: -20px; /* Adjust to stay within the container */
+        background-color: #FFFFFF;
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
+        color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
+    }
+}
+
+#about{
+    background-color: #0D1321;
 }
 
 #about h2{
@@ -153,9 +180,12 @@ h2{
     font-size: 2rem;
     
 }
+#about .lead{
+    color: white;
+}
 
 #about .btn, #gallery .btn ,#contribution .btn{
-    background-color: #F881ED; /* Pink */
+    background-color: #632CD0; /* Pink */
     color: white;  /* Text color */
     border: none;  /* Optional: Remove border if needed */
     padding: 0.5rem 1rem; /* Adjust padding as needed */
@@ -165,12 +195,12 @@ h2{
 
 /* Change color on hover */
 #about .btn:hover, #gallery .btn:hover ,#contribution .btn:hover{
-    background-color: #FF931E; /* Orange */
+    background-color: #0057FA; /* Orange */
 }
 
 /* Change color when clicked (active) */
 #about .btn:active, #gallery .btn:active ,#contribution .btn:active{
-    background-color: #EE3F36; /* Red */
+    background-color: #000000; 
 }
 
 .custom-card .custom-card-body {
@@ -196,7 +226,11 @@ margin-bottom: 0;
 #gallery{
     h2{
         font-size: 2rem;
+        color: #7028e4;
     }
+}
+#gallery{
+    background-color: #0D1321;
 }
 
 #objectives{
@@ -676,7 +710,7 @@ p {
         height: 10rem;
     }
     .card-body{
-        height: 18rem;
+        height: 12rem;
     }
 }
 
@@ -942,7 +976,7 @@ p {
     );
     background-size: 300% 300%;  /* Increase both dimensions for smoother transition */
     animation: flowDiagonal 5s linear infinite;  /* Adjust duration for smooth looping */
-    height: 5vh;  /* Adjust height as needed */
+    height: 1.7rem;  /* Adjust height as needed */
     border-bottom: 3px solid black;
     border-top: 3px solid black;
 }
@@ -961,7 +995,7 @@ p {
 }
 
 #program2 h2{
-    color: white;
+    color: #632CD0;
     font-size: 2rem;
 }
 
