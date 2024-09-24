@@ -478,7 +478,7 @@ p {
     font-weight: bold;
     display: block; /* This makes the quote occupy its own line */
     margin: 0.5rem 0; /* Optional: add some margin around the quote */
-  }
+}
 
 #contact {
     max-width: 100%;
@@ -489,11 +489,13 @@ p {
     background-color: #632CD0;
 }
 .contact-container{
-    height: 850px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display:flex;
     align-items:center;
     justify-content:center;
 }
+
 
 .contact-left{
     display:flex;
@@ -528,14 +530,17 @@ p {
 }
 
 .contact-inputs{
-    width:400px;
+    margin-bottom: 1rem;
+    width:100%;
+    max-width: 450px;
     height:50px;
     border:none;
     outline:none;
-    padding-left:25px;
+    padding-left:1rem;
     font-weight:500;
     color:#666;
     border-radius:50px;
+    
 }
 
 .contact-left textarea{
@@ -579,10 +584,31 @@ p {
     width: 300px;
 }
 
-@media (max-width:800px){
-    .contact-inputs{
-        width:80vw;
-    }
+.custom-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-select select {
+    /* Hide the default arrow by appearance */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Bootstrap icon as custom arrow */
+.custom-select i {
+    position: relative;
+    right: 5%;  /* Distance from the right side */
+    font-size: 1rem; /* Make the arrow larger */
+    pointer-events: none; /* Prevent interaction with the icon */
+    color: #333; /* Customize the color of the arrow */
+}
+
+@media (max-width:992px){
+
     .contact-right{
         display:none;
     }
@@ -590,7 +616,7 @@ p {
         max-width: 100%;
     }
     .contact-left{
-        max-width: 100%;
+        max-width: 80%;
     }
     
 }

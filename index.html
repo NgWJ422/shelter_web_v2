@@ -1349,14 +1349,47 @@
                         <h2>Join Us for a Good Cause!</h2>
                         <hr>
                         <p id="contact-d1">Become a Partner with KidoHelp</p>
-                        <p id="contact-d2">Your support can make a difference. Fill out the form below to get in touch with us!</p>
+                        <p id="contact-d2">Your support matters. Fill out the form to volunteer, collaborate, or contribute!</p>
                     </div>
                     <input type="hidden" name="access_key" value="feae47c3-2ac4-4cad-aa9f-2131ba7f190c">
-                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" autocomplete="on" required>
-                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" autocomplete="on" required>
-                    <input type="text" name="amount" placeholder="Amount to Contribute (RM)" class="contact-inputs" required>
-                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                    <button type="submit">Submit <img src="assets/img/arrow_icon.png" alt="Arrow icon"></button>
+                    <div class="custom-select">
+                        <!-- Dropdown to select the reason for contact -->
+                        <select name="reason" id="reason" class="contact-inputs" required>
+                            <option value="">(Select a reason)</option>
+                            <option value="trainer">I'm a trainer, I want to help</option>
+                            <option value="center">I have a center, wish to be covered by KidoHelp</option>
+                            <option value="donate">I want to donate to the program</option>
+                        </select>
+                        <!-- Bootstrap icon for custom arrow -->
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    
+                    <div>
+                        <!-- Input fields for the Trainer option -->
+                        <div id="trainerFields" class="reason-fields" style="display: none;">
+                            <input type="text" name="trainer_name" placeholder="Your Name" class="contact-inputs" required>
+                            <input type="email" name="trainer_email" placeholder="Your Email" class="contact-inputs" required>
+                            <textarea name="trainer_message" placeholder="How you want to help?" class="contact-inputs" required></textarea>
+                            <button type="submit">Submit <img src="assets/img/arrow_icon.png" alt="Arrow icon"></button>
+                        </div>
+
+                        <!-- Input fields for the Center option -->
+                        <div id="centerFields" class="reason-fields" style="display: none;">
+                            <input type="text" name="center_name" placeholder="Center Name" class="contact-inputs" required>
+                            <input type="email" name="center_email" placeholder="Your Email" class="contact-inputs" required>
+                            <textarea name="center_message" placeholder="Details about your center" class="contact-inputs" required></textarea>
+                            <button type="submit">Submit <img src="assets/img/arrow_icon.png" alt="Arrow icon"></button>
+                        </div>
+
+                        <!-- Input fields for the Donate option -->
+                        <div id="donateFields" class="reason-fields" style="display: none;">
+                            <input type="text" name="donor_name" placeholder="Your Name" class="contact-inputs" required>
+                            <input type="email" name="donor_email" placeholder="Your Email" class="contact-inputs" required>
+                            <input type="text" name="donate_amount" placeholder="Amount to Contribute (RM)" class="contact-inputs" required>
+                            <textarea name="donor_message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                            <button type="submit">Submit <img src="assets/img/arrow_icon.png" alt="Arrow icon"></button>
+                        </div>
+                    </div>
                 </form>
                 <div class="contact-right">
                     <picture>
@@ -1369,7 +1402,27 @@
             </div>
         </section>
         
+        <script>
+            document.getElementById('reason').addEventListener('change', function() {
+                // Get the selected value from the dropdown
+                var reason = this.value;
 
+                // Hide all input fields by default
+                document.querySelectorAll('.reason-fields').forEach(function(field) {
+                    field.style.display = 'none';
+                });
+
+                // Show the input fields based on the selected reason
+                if (reason === 'trainer') {
+                    document.getElementById('trainerFields').style.display = 'block';
+                } else if (reason === 'center') {
+                    document.getElementById('centerFields').style.display = 'block';
+                } else if (reason === 'donate') {
+                    document.getElementById('donateFields').style.display = 'block';
+                }
+            });
+
+        </script>
         <script src="js/form-rate-limit.js"></script>
 
         <section class="filler_rainbow"></section>
