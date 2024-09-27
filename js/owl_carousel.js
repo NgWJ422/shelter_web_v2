@@ -23,7 +23,10 @@ $(document).ready(function(){
             1200:{
                 items:4
             }
-        }
+        },
+        // Other options as needed
+        onInitialized: setEqualHeights2,
+        onResized: setEqualHeights2 // Adjust on window resize
     });
 
     // Initialize the second carousel
@@ -97,6 +100,25 @@ $(document).ready(function(){
 
     function setEqualHeights() {
         const cardBodies = $('#contribution .card-body');
+        let maxHeight = 0;
+
+        // Reset heights
+        cardBodies.css('height', 'auto');
+
+        // Calculate the maximum height
+        cardBodies.each(function() {
+            const cardHeight = $(this).outerHeight();
+            if (cardHeight > maxHeight) {
+                maxHeight = cardHeight;
+            }
+        });
+
+        // Set all card bodies to the maximum height
+        cardBodies.height(maxHeight);
+    }
+
+    function setEqualHeights2() {
+        const cardBodies = $('#courses .card-body');
         let maxHeight = 0;
 
         // Reset heights

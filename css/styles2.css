@@ -86,7 +86,7 @@ h3{
     color: #A4A4AE;
     font-weight: 700;
     h4{
-        color: #632CD0;
+        color: #F881ED;
     }
 }
 
@@ -145,18 +145,15 @@ h2{
     background-color: #0D1321;
     h2{
         font-size:2rem;
-        color: #632CD0;
-    }
-    .card{
-        border: 1px solid #632CD0;
-        border-left: 3px solid #632CD0;
-        box-shadow: 0 2px 2px #632CD0;
+        color: #F881ED;
     }
     img{
         height: 15rem;
     }
     .card-body{
         height: 10rem;
+        background: linear-gradient(101deg,#7028e4 24%,#F881ED);
+        color: white;
     }
     .owl-nav .owl-prev {
         left: -20px; /* Adjust to stay within the container */
@@ -192,7 +189,7 @@ h2{
 }
 
 #about h2{
-    color: #632CD0;
+    color: #F881ED;
     font-size: 2rem;
     
 }
@@ -242,7 +239,7 @@ margin-bottom: 0;
 #gallery{
     h2{
         font-size: 2rem;
-        color: #7028e4;
+        color: #FFFFFF;
     }
 }
 #gallery{
@@ -313,7 +310,7 @@ margin: auto;
 #partners{
     background-color: #0D1321;
 h2{
-    color: #632CD0;
+    color: #F881ED;
     font-size: 2rem;
 }
 h3{
@@ -471,7 +468,7 @@ p {
 #founders{
     background-color: #0D1321;
     h2{
-        color: #632CD0;
+        color: #F881ED;
         font-size: 2rem;
     }
 }
@@ -1021,7 +1018,7 @@ p {
 }
 
 #program2 h2{
-    color: #632CD0;
+    color: #FFFFFF;
     font-size: 2rem;
 }
 
