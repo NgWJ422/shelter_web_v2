@@ -47,45 +47,48 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles2.css">
         <!-- Preload links for screens wider than 992px -->
-        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_1.webp" as="image" class="preload-lg" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_3.webp" as="image" class="preload-lg" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_5.webp" as="image" class="preload-lg" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp" as="image" class="preload-lg" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_14.webp" as="image" class="preload-lg" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_23.webp" as="image" class="preload-lg" disabled>
-    
+        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_1.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_3.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_5.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_14.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_23.webp" as="image" media="(min-width: 992px)">
+
         <!-- Preload links for screens narrower than 992px -->
-        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_1.webp" as="image" class="preload-sm" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_3.webp" as="image" class="preload-sm" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_5.webp" as="image" class="preload-sm" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_2.webp" as="image" class="preload-sm" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_14.webp" as="image" class="preload-sm" disabled>
-        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_23.webp" as="image" class="preload-sm" disabled>
+        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_1.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_3.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_5.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_2.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_14.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_23.webp" as="image" media="(max-width: 991px)">
 
         <script defer>
             function updatePreloadLinks() {
-                // Select all preload links
                 const preloadLgLinks = document.querySelectorAll('.preload-lg');
                 const preloadSmLinks = document.querySelectorAll('.preload-sm');
-        
-                // Check viewport width
+            
                 if (window.matchMedia("(min-width: 992px)").matches) {
-                    // For screens wider than 992px, enable lg preload links
                     preloadLgLinks.forEach(link => link.removeAttribute('disabled'));
                     preloadSmLinks.forEach(link => link.setAttribute('disabled', 'true'));
                 } else {
-                    // For screens narrower than 992px, enable sm preload links
                     preloadLgLinks.forEach(link => link.setAttribute('disabled', 'true'));
                     preloadSmLinks.forEach(link => link.removeAttribute('disabled'));
                 }
             }
-        
-            // Update preload links on page load
-            window.addEventListener('load', updatePreloadLinks);
-        
-            // Update preload links on resize
-            window.addEventListener('resize', updatePreloadLinks);
+
+            window.addEventListener('DOMContentLoaded', updatePreloadLinks);
+
+            window.addEventListener('resize', debounce(updatePreloadLinks, 200));
+
+            function debounce(fn, delay) {
+                let timeoutId;
+                return function(...args) {
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(() => fn.apply(this, args), delay);
+                };
+            }
         </script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->

@@ -24,7 +24,7 @@
         <link rel="alternate" hreflang="ms" href="https://ngwj422.github.io/shelter_web_v2/index-bm.html">
         <link rel="alternate" hreflang="zh-CN" href="https://ngwj422.github.io/shelter_web_v2/index-cn.html">
 
-        <title>KidoHelp - EN</title>
+        <title>Full Gallery</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/kidocode_icon.png" />
             
@@ -46,6 +46,50 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles2.css">
+
+        <!-- Preload links for screens wider than 992px -->
+        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_1.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_3.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/wsGallery_5.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_2.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_14.webp" as="image" media="(min-width: 992px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1920p/fbGallery_23.webp" as="image" media="(min-width: 992px)">
+
+        <!-- Preload links for screens narrower than 992px -->
+        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_1.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_3.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/w_1024p/wsGallery_5.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_2.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_14.webp" as="image" media="(max-width: 991px)">
+        <link rel="preload" href="assets/img/kidohelp_pics/fb_1024p/fbGallery_23.webp" as="image" media="(max-width: 991px)">
+
+        <script defer>
+            function updatePreloadLinks() {
+                const preloadLgLinks = document.querySelectorAll('.preload-lg');
+                const preloadSmLinks = document.querySelectorAll('.preload-sm');
+            
+                if (window.matchMedia("(min-width: 992px)").matches) {
+                    preloadLgLinks.forEach(link => link.removeAttribute('disabled'));
+                    preloadSmLinks.forEach(link => link.setAttribute('disabled', 'true'));
+                } else {
+                    preloadLgLinks.forEach(link => link.setAttribute('disabled', 'true'));
+                    preloadSmLinks.forEach(link => link.removeAttribute('disabled'));
+                }
+            }
+
+            window.addEventListener('DOMContentLoaded', updatePreloadLinks);
+
+            window.addEventListener('resize', debounce(updatePreloadLinks, 200));
+
+            function debounce(fn, delay) {
+                let timeoutId;
+                return function(...args) {
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(() => fn.apply(this, args), delay);
+                };
+            }
+        </script>
+
 
     </head>
     <body id="page-top">
