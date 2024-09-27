@@ -142,13 +142,15 @@ h2{
 }
 
 #courses{
+    background-color: #0D1321;
     h2{
         font-size:2rem;
+        color: #632CD0;
     }
     .card{
-        border: 1px solid #0D1321;
-        border-left: 3px solid #0D1321;
-        box-shadow: 0 2px 2px black;
+        border: 1px solid #632CD0;
+        border-left: 3px solid #632CD0;
+        box-shadow: 0 2px 2px #632CD0;
     }
     img{
         height: 15rem;
@@ -168,6 +170,20 @@ h2{
     .owl-theme .owl-nav [class*=owl-]:hover {
         background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
         color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
+    }
+    /* Change the default color of the dots */
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #A4A4AE;
+    }
+
+    /* Change the color of the active dot */
+    .owl-theme .owl-dots .owl-dot.active span {
+        background-color: white;
+    }
+
+    /* Optional: Change color on hover */
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: #F881ED; /* Purple: A rich, sophisticated purple */
     }
 }
 
@@ -271,7 +287,7 @@ h2{
 
 .item .time {
     position: relative;
-    left: 30%;
+    left: calc((100% - 8rem)/2);
     width: 8rem; /* Ensure time is correctly positioned */
     text-align: center;
     z-index: 2; /* Ensure it appears above the line */
@@ -279,21 +295,7 @@ h2{
     font-weight: 700;
     background-color: #0D1321;
 }
-@media (max-width: 991px) {
-    .item .time{
-        left:35%;
-    }
-}
-@media (max-width: 767px) {
-    .item .time{
-        left:25%;
-    }
-}
-@media (max-width: 576px) {
-    .item .time{
-        left:30%;
-    }
-}
+
 
 
 article {
@@ -309,18 +311,21 @@ margin: auto;
 }
 
 #partners{
-    background-color: #FFFBF3;
+    background-color: #0D1321;
 h2{
-    color: #0057FA;
+    color: #632CD0;
     font-size: 2rem;
 }
 h3{
+    color: white;
     font-size: 1.8rem;
 }
+p{
+    color: white;
 }
-
-#partners .card{
-    border: 3px dashed #0D1321;
+.card p{
+    color: black;
+}
 }
 
 .img-container {
@@ -464,15 +469,13 @@ p {
 }
 
 #founders{
+    background-color: #0D1321;
     h2{
+        color: #632CD0;
         font-size: 2rem;
     }
 }
 
-#founders .card{
-    border: 2px solid #0D1321;
-    box-shadow: #0D1321 3px 3px 3px;
-}
 
 #partners q {
     font-weight: bold;
@@ -714,6 +717,10 @@ p {
         background-color: #126DF2; /* Blue-D: A deep, elegant blue for the background */
         color: #F7F7FC; /* CG-01: A soft, near-white color for the arrow sign */
     }
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+        transform: translateY(-5rem);
+    }
     .card{
         background: linear-gradient(101deg,#7028e4 24%,#F881ED);
         color: white;
@@ -733,12 +740,11 @@ p {
         background-color: #F881ED; /* Purple: A rich, sophisticated purple */
     }
     img{
-        height: 10rem;
+        height: 20rem;
     }
-    .card-body{
-        height: 12rem;
-    }
+    
 }
+
 
 
 
@@ -989,19 +995,13 @@ p {
 .filler_rainbow {
     background: linear-gradient(
         135deg,  /* Diagonal flow for more natural transition */
-        #FF5400,  /* Orange-B */
-        #FF931E,  /* Orange */
-        #FFD500,  /* Yellow */
-        #DEFF04,  /* Lime */
-        #3AC152,  /* Green */
-        #06BDFC,  /* Capri */
         #126DF2,  /* Blue-B */
         #632CD0,  /* Purple */
         #F881ED,  /* Pink */
-        #FF5400   /* Repeat Orange-B to create a seamless loop */
+        #126DF2  /* Blue-B */
     );
     background-size: 300% 300%;  /* Increase both dimensions for smoother transition */
-    animation: flowDiagonal 5s linear infinite;  /* Adjust duration for smooth looping */
+    animation: flowDiagonal 15s linear infinite;  /* Adjust duration for smooth looping */
     height: 1.7rem;  /* Adjust height as needed */
     border-bottom: 3px solid black;
     border-top: 3px solid black;
@@ -1236,3 +1236,59 @@ p {
     }
 }
 
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Maximum 3 images per row */
+    grid-auto-rows: auto; /* Ensures rows adjust automatically based on image size */
+    gap: 0 10px; /* 0px vertical gap, 10px horizontal gap */
+    justify-content: center; /* Centers the grid horizontally */
+}
+
+.gallery-item {
+    display: flex; /* Makes the gallery-item a flex container */
+    justify-content: center; /* Centers the image horizontally within the item */
+    align-items: center; /* Centers the image vertically within the item */
+    overflow: hidden;
+}
+
+.gallery-item img {
+    max-width: 100%; /* Ensures the image scales properly */
+    max-height: 100%; /* Ensures the image scales properly */
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+/* Media Queries to adjust the number of columns based on screen size */
+@media (max-width: 1200px) {
+    .masonry {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .masonry {
+        grid-template-columns: 1fr; /* 1 image per row for small screens */
+    }
+}
+
+
+.g_full_wrapper {
+    box-sizing: border-box;
+    width: 100%; /* Full width of the viewport */
+    margin: 0 auto; /* Centering the container */
+    padding: 0 1rem; /* Padding on the sides */
+    display: flex; /* Flexbox for layout control */
+    flex-direction: column; /* Column layout for children */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+.g_full_wrapper {
+    padding: 0 0.5rem; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Keep column layout on mobile */
+}
+}
+  

@@ -49,7 +49,6 @@
         <link rel="preload" as="image" href="assets/img/kidocode_family_compressed_720p.webp" type="image/webp" />
         <link rel="preload" as="image" href="assets/img/kidocode_family_compressed_1024p.webp" type="image/webp" />
         <link rel="preload" as="image" href="assets/img/kidocode_family_compressed.webp" type="image/webp" />
-
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -175,185 +174,203 @@
         <section class="filler_rainbow"></section>
 
         <!--Program Structure-->
-        <section class="py-4 my-0" id="program">
+        <section id="program2">
+            <div class="container text-center py-1 pt-3">
+                <h2 class="fw-bold">项目结构</h2>
+            </div>
             <div class="container">
-                <div class="text-center">
-                    <h2 class="fw-bold">项目结构</h2>
+                <div id="phase_lbl">
+                    <span id="phase_title">阶段</span>
                 </div>
-                <div class="row justify-content-around py-5 g-3 pt-2">
-                    <!-- Phase 1 Card -->
-                    <div class="card mb-4 col-lg-11 py-3">
-                        <div class="row g-0">
-                            <!-- Title Section -->
-                            <div class="col-lg-3 p-3">
-                                <h3 class="card-title">第一阶段：<br> 项目启动</h3>
-                            </div>
-                            <!-- Accordion Section -->
-                            <div class="col-lg-9">
-                                <div class="accordion" id="phase1Accordion">
-                                    <!-- Accordion Item 1 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                现场访问、需求评估和工作坊规划
-                                            </button>
-                                        </h4>
-                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#phase1Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>进行初步现场访问，以会见孤儿院负责人并评估基础设施。</li>
-                                                    <li>与孤儿院负责人讨论项目目标，并规划即将举行的工作坊。</li>
-                                                    <li>包括为期2周的每周3-4天的观察和建立联系期。</li>
-                                                </ul>
+                <ul class="timeline">
+                    <li id="phase1">
+                      <div class="timeline-badge">1</div>
+                      <div class="timeline-panel">
+                        <!-- Phase 1 Card -->
+                        <div class="card mb-4 col-lg-11 py-3">
+                            <div class="row g-0">
+                                <!-- Title Section -->
+                                <div class="col-lg-3 p-3">
+                                    <h3 class="card-title">项目启动</h3>
+                                </div>
+                                <!-- Accordion Section -->
+                                <div class="col-lg-9">
+                                    <div class="accordion" id="phase1Accordion">
+                                        <!-- Accordion Item 1 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    现场访问、需求评估和工作坊规划
+                                                </button>
+                                            </h4>
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#phase1Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>进行初步现场访问，以会见孤儿院负责人并评估基础设施。</li>
+                                                        <li>与孤儿院负责人讨论项目目标，并规划即将举行的工作坊。</li>
+                                                        <li>包括为期2周的每周3-4天的观察和建立联系期。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Accordion Item 2 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                基础设施搭建
-                                            </button>
-                                        </h4>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#phase1Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>检查设施，确保笔记本电脑配备必要的软件和工具。</li>
-                                                </ul>
+                                        <!-- Accordion Item 2 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    基础设施搭建
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#phase1Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>检查设施，确保笔记本电脑配备必要的软件和工具。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Accordion Item 3 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Cubie平台介绍与培训
-                                            </button>
-                                        </h4>
-                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#phase1Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>向孤儿院工作人员和讲师介绍Cubie平台。</li>
-                                                    <li>提供关于将Cubie整合到教育课程中的培训。</li>
-                                                </ul>
+                                        <!-- Accordion Item 3 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Cubie平台介绍与培训
+                                                </button>
+                                            </h4>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#phase1Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>向孤儿院工作人员和讲师介绍Cubie平台。</li>
+                                                        <li>提供关于将Cubie整合到教育课程中的培训。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Phase 2 Card -->
-                    <div class="card mb-4 col-lg-11 py-3">
-                        <div class="row g-0">
-                            <!-- Title Section -->
-                            <div class="col-lg-3 p-3">
-                                <h3 class="card-title">第二阶段： <br>工作坊实施</h3>
-                            </div>
-                            <!-- Accordion Section -->
-                            <div class="col-lg-9">
-                                <div class="accordion" id="phase2Accordion">
-                                    <!-- Accordion Item 1 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingFour">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                课程开始与进展评估
-                                            </button>
-                                        </h4>
-                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#phase2Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>开始提供以实践应用为重点的IT教育课程。</li>
-                                                    <li>定期评估学生的进展和理解情况。</li>
-                                                </ul>
+                      </div>
+                    </li>
+                    <li id="phase2" class="timeline-inverted">
+                      <div class="timeline-badge warning">2</div>
+                      <div class="timeline-panel">
+                        <!-- Phase 2 Card -->
+                        <div class="card mb-4 col-lg-11 py-3">
+                            <div class="row g-0">
+                                <!-- Title Section -->
+                                <div class="col-lg-3 p-3">
+                                    <h3 class="card-title">工作坊实施</h3>
+                                </div>
+                                <!-- Accordion Section -->
+                                <div class="col-lg-9">
+                                    <div class="accordion" id="phase2Accordion">
+                                        <!-- Accordion Item 1 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    课程开始与进展评估
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#phase2Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>开始提供以实践应用为重点的IT教育课程。</li>
+                                                        <li>定期评估学生的进展和理解情况。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Accordion Item 2 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingFive">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                定期访问与关系建立
-                                            </button>
-                                        </h4>
-                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#phase2Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>在为期2周的时间里，每周在孤儿院待3-4天，参与关系建立活动。</li>
-                                                    <li>实施计划中的工作坊，涵盖IT教育的基础知识。</li>
-                                                </ul>
+                                        <!-- Accordion Item 2 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    定期访问与关系建立
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#phase2Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>在为期2周的时间里，每周在孤儿院待3-4天，参与关系建立活动。</li>
+                                                        <li>实施计划中的工作坊，涵盖IT教育的基础知识。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Phase 3 Card -->
-                    <div class="card mb-4 col-lg-11 py-3">
-                        <div class="row g-0">
-                            <!-- Title Section -->
-                            <div class="col-lg-3 p-3">
-                                <h3 class="card-title">第三阶段：<br>最终项目开发与实习安排</h3>
-                            </div>
-                            <!-- Accordion Section -->
-                            <div class="col-lg-9">
-                                <div class="accordion" id="phase3Accordion">
-                                    <!-- Accordion Item 1 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingSix">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                最终项目开发
-                                            </button>
-                                        </h4>
-                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#phase3Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>与学生合作开发最终项目，以应用他们所获得的技能。</li>
-                                                    <li>在项目开发阶段提供指导和支持。</li>
-                                                </ul>
+                      </div>
+                    </li>
+                    <li id="phase3">
+                      <div class="timeline-badge danger">3</div>
+                      <div class="timeline-panel">
+                        <!-- Phase 3 Card -->
+                        <div class="card mb-4 col-lg-11 py-3">
+                            <div class="row g-0">
+                                <!-- Title Section -->
+                                <div class="col-lg-3 p-3">
+                                    <h3 class="card-title">最终项目开发与实习安排</h3>
+                                </div>
+                                <!-- Accordion Section -->
+                                <div class="col-lg-9">
+                                    <div class="accordion" id="phase3Accordion">
+                                        <!-- Accordion Item 1 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingSix">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    最终项目开发
+                                                </button>
+                                            </h4>
+                                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#phase3Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>与学生合作开发最终项目，以应用他们所获得的技能。</li>
+                                                        <li>在项目开发阶段提供指导和支持。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Accordion Item 2 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingSeven">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                实习安排
-                                            </button>
-                                        </h4>
-                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#phase3Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>促进学生实习机会的安排。</li>
-                                                    <li>在实习期间提供持续的支持和指导。</li>
-                                                </ul>
+                                        <!-- Accordion Item 2 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingSeven">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                    实习安排
+                                                </button>
+                                            </h4>
+                                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#phase3Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>促进学生实习机会的安排。</li>
+                                                        <li>在实习期间提供持续的支持和指导。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- Accordion Item 3 -->
-                                    <div class="accordion-item">
-                                        <h4 class="accordion-header" id="headingEight">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                项目评估与未来规划
-                                            </button>
-                                        </h4>
-                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#phase3Accordion">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>评估项目的整体成功。</li>
-                                                    <li>收集学生、讲师和合作企业的反馈意见。</li>
-                                                    <li>讨论未来扩展和改进的可能性。</li>
-                                                </ul>
+                                        <!-- Accordion Item 3 -->
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingEight">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                    项目评估与未来规划
+                                                </button>
+                                            </h4>
+                                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#phase3Accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>评估项目的整体成功。</li>
+                                                        <li>收集学生、讲师和合作企业的反馈意见。</li>
+                                                        <li>讨论未来扩展和改进的可能性。</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>        
-            </div>        
+                      </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <section class="filler_rainbow"></section>
@@ -364,7 +381,7 @@
                 <div class="row align-items-center">
                     <!-- Logo Section -->
                     <div class="col-md-12 mb-4 text-center">
-                        <img src="assets/img/kidocode_new_logo.svg" alt="Kidocode Logo and title" class="img-fluid">
+                        <img src="assets/img/kidocode_logo_white.svg" alt="Kidocode Logo and title" class="img-fluid">
                     </div>
         
                     <!-- Text Section -->
@@ -400,7 +417,7 @@
                         <div class="owl-carousel owl-theme carousel2 ">
                             <!-- Card 1 -->
                             <div class="item">
-                                <div class="time text-center">2014</div>
+                                <div class="time text-center">2015</div>
                                 <div class="card my-2">
                                     <picture>
                                         <source srcset="assets/img/kidohelp_pics/w_480p/wsGallery_9.webp 480w, assets/img/kidohelp_pics/w_1024p/wsGallery_9.webp 1024w, assets/img/kidohelp_pics/wsGallery_9.webp 1920w" type="image/webp">
@@ -412,17 +429,14 @@
                                     </picture>
                                     
                                     <div class="card-body">
-                                        <h3 class="card-title">活动 1</h3>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic neque rem molestias aliquid. Repellendus, asperiores unde. Eos dolorem optio commodi ea maiores perspiciatis porro, error doloribus facilis qui nobis!</p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <a href="gallery_full.html#activity_1" class="btn btn-primary">查看更多</a>
+                                        <h3 class="card-title">Maplewood的KidoCode课程</h3>
+                                        <p class="card-text">从2015年3月到9月，KidoCode在位于蒲种的Maplewood学习中心举办了一系列课程，向超过500名儿童和家长介绍了编程的世界。通过使用Arduino、Python和移动应用开发等工具，8-12岁的孩子们通过有趣的实践项目学习了编程概念。该项目通过探索数学、游戏设计和电子学等不同领域，强化了变量等核心概念。通过让家长和教育工作者参与其中，KidoCode旨在对未来的STEM教育产生持久的影响。</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 2 -->
                             <div class="item">
-                                <div class="time text-center">2015</div>
+                                <div class="time text-center">2015年8月</div>
                                 <div class="card my-2">
                                     <picture>
                                         <source srcset="assets/img/kidohelp_pics/fb_480p/fbGallery_4.webp 480w, assets/img/kidohelp_pics/fb_1024p/fbGallery_4.webp 1024w, assets/img/kidohelp_pics/fb_1920p/fbGallery_4.webp 1920w" type="image/webp">
@@ -434,17 +448,29 @@
                                     </picture>
 
                                     <div class="card-body">
-                                        <h3 class="card-title">活动 2</h3>
-                                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum atque, ullam animi aperiam id velit totam nesciunt temporibus laudantium repudiandae fugiat recusandae corrupti, et eligendi. Iure doloribus autem dolor nam.</p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <a href="gallery_full.html#activity_2" class="btn btn-primary">查看更多</a>
+                                        <h3 class="card-title">KidoCode在亚太科技大学的编程一小时活动</h3>
+                                        <p class="card-text">2015年8月15日，亚太科技大学（APU）与KidoCode合作举办了“编程一小时”活动，免费为6-11岁的儿童提供计算机编程课程。超过40名儿童和家长参与了这一充满对计算机科学热情的互动活动。在Hossein Tohidi先生（Code叔叔）的带领下，课程包括了关于编程重要性的演示，以及独特的“杯堆叠”活动，提升了孩子们的分析和逻辑思维能力。参与者还通过使用Blockly进行《愤怒的小鸟》游戏，享受编程概念的乐趣，培养了团队合作精神和友谊。每个孩子都获得了一张参与证书，标志着此次活动对家庭而言是一段成功且富有教育意义的体验。</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 3 -->
                             <div class="item">
-                                <div class="time text-center">May 2024</div>
+                                <div class="time text-center">2015</div>
+                                <div class="card my-2">
+                                    <picture>
+                                        <source srcset="assets/img/kidohelp_pics/mra_9.webp" type="image/webp">
+                                        <img src="assets/img/kidohelp_pics/mra_9.jpg" class="card-img-top" alt="Card 3">
+                                    </picture>
+
+                                    <div class="card-body">
+                                        <h3 class="card-title">与难民儿童一起编程（MRA）</h3>
+                                        <p class="card-text">KidoHelp倡议与MRA和InfoSyte合作，为难民儿童提供每两周一次的编程课程，教授他们Python和JavaScript等基本编程技能。在KidoCode的带领下，该项目旨在激励和装备孩子们，使他们能够为现实问题创造解决方案。第三节课重点教授使用Python Turtle绘制几何图形，而未来的课程将更深入地探讨编程内容。通过持续的支持，希望这些孩子不仅能获得技术专长，还能增强自信心，以塑造更光明的未来。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="item">
+                                <div class="time text-center">2024年5月</div>
                                 <div class="card my-2">
                                     <picture>
                                         <source srcset="assets/img/kidohelp_pics/drive_blur/w/480p/drive_1_crop.webp 480w, assets/img/kidohelp_pics/drive_blur/w/1024p/drive_1_crop.webp 1024w, assets/img/kidohelp_pics/drive_blur/drive_1_crop.webp 1920w" type="image/webp">
@@ -452,33 +478,27 @@
                                              srcset="assets/img/kidohelp_pics/drive_blur/w/480p/drive_1_crop.png 480w, assets/img/kidohelp_pics/drive_blur/w/1024p/drive_1_crop.png 1024w, assets/img/kidohelp_pics/drive_blur/drive_1_crop.png 1920w" 
                                              sizes="(max-width: 600px) 480px, (max-width: 1024px) 1024px, 1920px" 
                                              class="card-img-top" 
-                                             alt="Card 3">
+                                             alt="Card 4">
                                     </picture>
 
                                     <div class="card-body">
-                                        <h3 class="card-title">活动 3</h3>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi velit similique, assumenda nobis nisi natus autem totam! Deleniti, ad numquam at sint corrupti nostrum repellat neque! Totam illum ipsam earum.</p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <a href="gallery_full.html#activity_3" class="btn btn-primary">查看更多</a>
+                                        <h3 class="card-title">吉隆坡儿童庇护所的Cubie培训</h3>
+                                        <p class="card-text">在合作伙伴的赞助下，来自吉隆坡一家庇护所的三名儿童加入了KidoCode的项目。第一节课向他们介绍了Cubie，这是他们将在在线课程中使用的平台。作为KidoHelp倡议第一阶段的一部分，重点是培训儿童将Cubie整合到他们的教育课程中，为他们未来的学习提供基础数字技能。</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 4 -->
+                            <!-- Card 5 -->
                             <div class="item">
-                                <div class="time text-center">July 2024</div>
+                                <div class="time text-center">2024年7月</div>
                                 <div class="card my-2">
                                     <picture>
                                         <source srcset="assets/img/kidohelp_pics/insta_compressed/kidohelp_insta_1.webp" type="image/webp">
-                                        <img src="assets/img/kidohelp_pics/insta_compressed/kidohelp_insta_1.png" class="card-img-top" alt="Card 4">
+                                        <img src="assets/img/kidohelp_pics/insta_compressed/kidohelp_insta_1.png" class="card-img-top" alt="Card 5">
                                     </picture>
 
                                     <div class="card-body">
-                                        <h3 class="card-title">Aktiviti 4</h3>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore, aperiam in commodi repudiandae itaque dolorum velit, magni dicta sit aliquam, maxime deserunt labore explicabo laborum est reprehenderit exercitationem doloremque.</p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <a href="gallery_full.html#activity_4" class="btn btn-primary">查看更多</a>
+                                        <h3 class="card-title">KidoHelp在儿童庇护所的启动</h3>
+                                        <p class="card-text">KidoCode自豪地在儿童庇护所启动了KidoHelp项目，提供创新的编程、机器人和人工智能学习机会。该项目旨在通过提供有价值的技术教育来赋能贫困儿童。这一天包括了与培训师的欢迎环节，随后是一次晚宴，以促进联系并创造一个支持性的学习环境。通过KidoHelp，KidoCode致力于帮助这些孩子建设更光明的未来。</p>
                                     </div>
                                 </div>
                             </div>
@@ -1299,22 +1319,58 @@
         <section class="filler_rainbow"></section>
 
         <!--contact-->
+        <!-- Contact Section -->
         <section class="page-section" id="contact">
             <div class="contact-container">
                 <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-left ps-3" onsubmit="return handleSubmit(event)" autocomplete="on">
                     <div class="contact-left-title container">
-                        <h2>加入我们，一起为公益事业贡献力量！</h2>
+                        <h2>加入我们，为了一个美好的事业！</h2>
                         <hr>
-                        <p id="contact-d1">成为 KidoHelp 的合作伙伴</p>
-                        <p id="contact-d2">您的支持可以带来改变。请填写下面的表格与我们联系！</p>
+                        <p id="contact-d1">成为KidoHelp的合作伙伴</p>
+                        <p id="contact-d2">您的支持很重要。请填写表格以志愿服务、合作或贡献！</p>
                     </div>
                     <input type="hidden" name="access_key" value="feae47c3-2ac4-4cad-aa9f-2131ba7f190c">
-                    <input type="text" name="name" placeholder="您的姓名" class="contact-inputs" autocomplete="on" required>
-                    <input type="email" name="email" placeholder="您的电子邮件" class="contact-inputs" autocomplete="on" required>
-                    <input type="text" name="amount" placeholder="捐赠金额（RM）" class="contact-inputs" required>
-                    <textarea name="message" placeholder="您的信息" class="contact-inputs" required></textarea>
-                    <button type="submit">提交 <img src="assets/img/arrow_icon.png" alt="Arrow icon"></button>
+                    
+                    <!-- Dropdown to select the reason for contact -->
+                    <div class="custom-select">
+                        <select name="reason" id="reason" class="contact-inputs" required>
+                            <option value="">(选择一个理由)</option>
+                            <option value="trainer">我是培训师，我想提供帮助</option>
+                            <option value="center">我有一个中心，希望能得到KidoHelp的支持</option>
+                            <option value="donate">我想为该项目捐款</option>
+                        </select>
+                        <!-- Bootstrap icon for custom arrow -->
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    
+                    <div>
+                        <!-- Input fields for the Trainer option -->
+                        <div id="trainerFields" class="reason-fields" style="display: none;">
+                            <input type="text" name="trainer_name" placeholder="您的姓名" class="contact-inputs">
+                            <input type="email" name="trainer_email" placeholder="您的电子邮件" class="contact-inputs">
+                            <textarea name="trainer_message" placeholder="您希望如何提供帮助？" class="contact-inputs"></textarea>
+                        </div>
+
+                        <!-- Input fields for the Center option -->
+                        <div id="centerFields" class="reason-fields" style="display: none;">
+                            <input type="text" name="center_name" placeholder="中心名称" class="contact-inputs">
+                            <input type="email" name="center_email" placeholder="您的电子邮件" class="contact-inputs">
+                            <textarea name="center_message" placeholder="有关您中心的详细信息" class="contact-inputs"></textarea>
+                        </div>
+
+                        <!-- Input fields for the Donate option -->
+                        <div id="donateFields" class="reason-fields" style="display: none;">
+                            <input type="text" name="donor_name" placeholder="您的姓名" class="contact-inputs">
+                            <input type="email" name="donor_email" placeholder="您的电子邮件" class="contact-inputs">
+                            <input type="text" name="donate_amount" placeholder="捐款金额（RM）" class="contact-inputs">
+                            <textarea name="donor_message" placeholder="您的留言" class="contact-inputs"></textarea>
+                        </div>
+
+                        <!-- Initially hidden submit button -->
+                        <button id="submitButton" type="submit" style="display: none;">提交<img src="assets/img/arrow_icon.png" alt="Arrow icon"></button>
+                    </div>
                 </form>
+
                 <div class="contact-right">
                     <picture>
                         <!-- WebP source -->
@@ -1326,8 +1382,51 @@
             </div>
         </section>
         
+        <script>
+            document.getElementById('reason').addEventListener('change', function () {
+                // Get the selected value from the dropdown
+                var reason = this.value;
 
-        <script src="js/form-rate-limit.js"></script>
+                // Hide all input fields and remove 'required' attribute by default
+                document.querySelectorAll('.reason-fields').forEach(function (field) {
+                    field.style.display = 'none';
+                    field.querySelectorAll('input, textarea').forEach(function (input) {
+                        input.value = ''; // Clear the input values
+                        input.required = false; // Remove required from all hidden fields
+                    });
+                });
+
+                // Show the input fields based on the selected reason and make them required
+                if (reason === 'trainer') {
+                    document.getElementById('trainerFields').style.display = 'block';
+                    document.querySelectorAll('#trainerFields input, #trainerFields textarea').forEach(function (input) {
+                        input.required = true; // Add required to the relevant inputs
+                    });
+                } else if (reason === 'center') {
+                    document.getElementById('centerFields').style.display = 'block';
+                    document.querySelectorAll('#centerFields input, #centerFields textarea').forEach(function (input) {
+                        input.required = true; // Add required to the relevant inputs
+                    });
+                } else if (reason === 'donate') {
+                    document.getElementById('donateFields').style.display = 'block';
+                    document.querySelectorAll('#donateFields input, #donateFields textarea').forEach(function (input) {
+                        input.required = true; // Add required to the relevant inputs
+                    });
+                }
+
+                // Show the submit button when a valid option is selected
+                var submitButton = document.getElementById('submitButton');
+                if (reason !== "") {
+                    submitButton.style.display = 'block';
+                } else {
+                    submitButton.style.display = 'none';
+                }
+            });
+
+        </script>
+
+
+        <script src="js/submit.js"></script>
 
         <section class="filler_rainbow"></section>
 
@@ -1390,86 +1489,7 @@
         <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
         <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
         <script src="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/controller/project-1.js"></script>
-        <script>
-            // Get the current screen width
-            $(document).ready(function(){
-            // Initialize the first carousel
-            $('.carousel1').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                dots: true,
-                navText: [
-                    '<i class="bi bi-chevron-left"></i>',
-                    '<i class="bi bi-chevron-right"></i>'
-                ],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    992: {
-                        items: 3
-                    },
-                    1200:{
-                        items:4
-                    }
-                }
-            });
-
-            // Initialize the second carousel
-            $('.carousel2').owlCarousel({
-                loop: false,
-                margin: 10,
-                nav: true,
-                dots: true,
-                navText: [
-                    '<i class="bi bi-chevron-left"></i>',
-                    '<i class="bi bi-chevron-right"></i>'
-                ],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    992: {
-                        items: 3
-                    }
-                }
-            });
-
-            // Initialize the third carousel
-            $('.carousel3').owlCarousel({
-                loop: false,
-                margin: 10,
-                nav: true,
-                dots: true,
-                navText: [
-                    '<i class="bi bi-chevron-left"></i>',
-                    '<i class="bi bi-chevron-right"></i>'
-                ],
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    576: {
-                        items: 3
-                    },
-                    992: {
-                        items: 4
-                    },
-                    1200:{
-                        items: 5
-                    }
-                }
-            });
-        });
-
-        </script>
+        <script src="js/owl_carousel.js"></script>
         <script>
             // Prevent the dropdown from closing when clicking inside it
             document.querySelectorAll('.dropdown-menu').forEach(function(dropdown) {
