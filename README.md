@@ -1,4 +1,5 @@
 # KidoHelp Website
+Link: [https://ngwj422.github.io/shelter_web_v2/](https://ngwj422.github.io/shelter_web_v2/)
 
 ## Description
 This is a charity website built by Ng Wei Jie and other interns at Kidocode for the KidoHelp charity program. The website was originally based on an existing Bootstrap template but has been entirely rewritten from scratch to add new components such as card carousels, masonry galleries, an interactive contact section, and more. The website has been optimized to improve load times and SEO performance by converting image files to the WebP format (with fallbacks to PNG or JPG). Additionally, SEO meta tags have been incorporated.
